@@ -115,7 +115,7 @@ public abstract class EntityMap
 
     public void rewriteServerbound(ByteBuf packet, int oldId, int newId)
     {
-        rewrite( packet, oldId, newId, serverboundInts, serverboundVarInts );
+        rewrite( packet, new WriteObject(oldId, newId, serverboundInts, serverboundVarInts ));
     }
 
     public void rewriteServerbound(ByteBuf packet, int oldId, int newId, int protocolVersion)
@@ -125,7 +125,7 @@ public abstract class EntityMap
 
     public void rewriteClientbound(ByteBuf packet, int oldId, int newId)
     {
-        rewrite( packet, oldId, newId, clientboundInts, clientboundVarInts );
+        rewrite( packet, new WriteObject(oldId, newId, clientboundInts, clientboundVarInts) );
     }
 
     public void rewriteClientbound(ByteBuf packet, int oldId, int newId, int protocolVersion)
@@ -336,19 +336,31 @@ public abstract class EntityMap
         }
     }
 
+    private class WriteObject {
+        public int oldId;
+        public int newId;
+        public boolean[] ints;
+        public boolean[] varints;
+        public WriteObject(int oldID, int newId, boolean[] ints, boolean[] varints) {
+            this.oldId = oldID;
+            this.newId = newId;
+            this.ints = ints;
+            this.varints = varints;
+        }
+    }
     // Handles simple packets
-    private static void rewrite(ByteBuf packet, int oldId, int newId, boolean[] ints, boolean[] varints)
+    private static void rewrite(ByteBuf packet, WriteObject writeObject)
     {
         int readerIndex = packet.readerIndex();
         int packetId = DefinedPacket.readVarInt( packet );
         int packetIdLength = packet.readerIndex() - readerIndex;
 
-        if ( ints[packetId] )
+        if ( writeObject.ints[packetId] )
         {
-            rewriteInt( packet, oldId, newId, readerIndex + packetIdLength );
-        } else if ( varints[packetId] )
+            rewriteInt( packet, writeObject.oldId, writeObject.newId, readerIndex + packetIdLength );
+        } else if ( writeObject.varints[packetId] )
         {
-            rewriteVarInt( packet, oldId, newId, readerIndex + packetIdLength );
+            rewriteVarInt( packet, writeObject.oldId, writeObject.newId, readerIndex + packetIdLength );
         }
         packet.readerIndex( readerIndex );
     }
