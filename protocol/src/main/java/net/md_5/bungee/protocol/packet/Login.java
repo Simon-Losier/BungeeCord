@@ -182,21 +182,7 @@ public class Login extends DefinedPacket
         }
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_16 )
         {
-            if ( protocolVersion < ProtocolConstants.MINECRAFT_1_20_2 )
-            {
-                buf.writeByte( previousGameMode );
-            }
-
-            writeVarInt( worldNames.size(), buf );
-            for ( String world : worldNames )
-            {
-                writeString( world, buf );
-            }
-
-            if ( protocolVersion < ProtocolConstants.MINECRAFT_1_20_2 )
-            {
-                writeTag( dimensions, buf, protocolVersion );
-            }
+            handle_1_16_write(buf, protocolVersion);
         }
 
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_16 )
@@ -259,18 +245,7 @@ public class Login extends DefinedPacket
         }
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_20_2 )
         {
-            buf.writeBoolean( limitedCrafting );
-            if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_20_5 )
-            {
-                writeVarInt( (Integer) dimension, buf );
-            } else
-            {
-                writeString( (String) dimension, buf );
-            }
-            writeString( worldName, buf );
-            buf.writeLong( seed );
-            buf.writeByte( gameMode );
-            buf.writeByte( previousGameMode );
+            handle1_20_2_write(buf, protocolVersion);
         }
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_16 )
         {
@@ -279,15 +254,7 @@ public class Login extends DefinedPacket
         }
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_19 )
         {
-            if ( deathLocation != null )
-            {
-                buf.writeBoolean( true );
-                writeString( deathLocation.getDimension(), buf );
-                buf.writeLong( deathLocation.getPos() );
-            } else
-            {
-                buf.writeBoolean( false );
-            }
+            handle_1_19_write(buf);
         }
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_20 )
         {
@@ -297,6 +264,51 @@ public class Login extends DefinedPacket
         if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_20_5 )
         {
             buf.writeBoolean( secureProfile );
+        }
+    }
+
+    private void handle_1_19_write(ByteBuf buf) {
+        if ( deathLocation != null )
+        {
+            buf.writeBoolean( true );
+            writeString( deathLocation.getDimension(), buf);
+            buf.writeLong( deathLocation.getPos() );
+        } else
+        {
+            buf.writeBoolean( false );
+        }
+    }
+
+    private void handle1_20_2_write(ByteBuf buf, int protocolVersion) {
+        buf.writeBoolean( limitedCrafting );
+        if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_20_5 )
+        {
+            writeVarInt( (Integer) dimension, buf);
+        } else
+        {
+            writeString( (String) dimension, buf);
+        }
+        writeString( worldName, buf);
+        buf.writeLong( seed );
+        buf.writeByte( gameMode );
+        buf.writeByte( previousGameMode );
+    }
+
+    private void handle_1_16_write(ByteBuf buf, int protocolVersion) {
+        if ( protocolVersion < ProtocolConstants.MINECRAFT_1_20_2 )
+        {
+            buf.writeByte( previousGameMode );
+        }
+
+        writeVarInt( worldNames.size(), buf);
+        for ( String world : worldNames )
+        {
+            writeString( world, buf);
+        }
+
+        if ( protocolVersion < ProtocolConstants.MINECRAFT_1_20_2 )
+        {
+            writeTag( dimensions, buf, protocolVersion);
         }
     }
 
