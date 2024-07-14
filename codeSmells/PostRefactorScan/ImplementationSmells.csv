@@ -1,0 +1,1093 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+BungeeCord1,net.md_5.bungee.api,AbstractReconnectHandler,getForcedHost,Long Statement,The length of the statement "String forced=(con.getVirtualHost() == null) ? null : con.getListener().getForcedHosts().get(con.getVirtualHost().getHostString());" is 131.,29
+BungeeCord1,net.md_5.bungee.api,Favicon,create,Magic Number,The method contains a magic number: 64,66
+BungeeCord1,net.md_5.bungee.api,Favicon,create,Magic Number,The method contains a magic number: 64,66
+BungeeCord1,net.md_5.bungee.api,ServerConnectRequestTest,testNullTarget,Long Statement,The length of the statement "assertThrows(NullPointerException.class`() -> ServerConnectRequest.builder().target(null).reason(ServerConnectEvent.Reason.JOIN_PROXY).build());" is 144.,82
+BungeeCord1,net.md_5.bungee.api,ChatColor,hashCode,Magic Number,The method contains a magic number: 7,168
+BungeeCord1,net.md_5.bungee.api,ChatColor,hashCode,Magic Number,The method contains a magic number: 53,168
+BungeeCord1,net.md_5.bungee.api,ChatColor,of,Magic Number,The method contains a magic number: 2,239
+BungeeCord1,net.md_5.bungee.api,ChatColor,of,Magic Number,The method contains a magic number: 7,244
+BungeeCord1,net.md_5.bungee.api,ChatColor,of,Magic Number,The method contains a magic number: 16,244
+BungeeCord1,net.md_5.bungee.api.config,ListenerInfo,ListenerInfo,Long Parameter List,The method has 12 parameters. ,76
+BungeeCord1,net.md_5.bungee.api.config,ListenerInfo,ListenerInfo,Long Statement,The length of the statement "this(host`motd`maxPlayers`tabListSize`serverPriority`forceDefault`forcedHosts`tabListType`setLocalAddress`pingPassthrough`queryPort`queryEnabled`false);" is 152.,76
+BungeeCord1,net.md_5.bungee.api.event,AsyncEvent,completeIntent,Long Statement,The length of the statement "Preconditions.checkState(intentCount != null && intentCount.get() > 0`"Plugin %s has not registered intents for event %s"`plugin`this);" is 135.,69
+BungeeCord1,net.md_5.bungee.api.event,ServerKickEvent,ServerKickEvent,Long Parameter List,The method has 5 parameters. ,66
+BungeeCord1,net.md_5.bungee.api.event,ServerKickEvent,ServerKickEvent,Long Parameter List,The method has 5 parameters. ,72
+BungeeCord1,net.md_5.bungee.api.plugin,LibraryLoader,LibraryLoader,Long Statement,The length of the statement "this.repositories=repository.newResolutionRepositories(session`Arrays.asList(new RemoteRepository.Builder("central"`"default"`"https://repo.maven.apache.org/maven2").build()));" is 176.,43
+BungeeCord1,net.md_5.bungee.api.plugin,LibraryLoader,createLoader,Long Statement,The length of the statement "logger.log(Level.INFO`"[{0}] Loading {1} libraries... please wait"`new Object[]{desc.getName()`desc.getLibraries().size()});" is 124.,74
+BungeeCord1,net.md_5.bungee.api.plugin,LibraryLoader,createLoader,Long Statement,The length of the statement "result=repository.resolveDependencies(session`new DependencyRequest(new CollectRequest((Dependency)null`dependencies`repositories)`null));" is 138.,74
+BungeeCord1,net.md_5.bungee.api.plugin,Plugin,Plugin,Long Statement,The length of the statement "Preconditions.checkState(classLoader instanceof PluginClassloader`"Plugin requires " + PluginClassloader.class.getName());" is 122.,31
+BungeeCord1,net.md_5.bungee.api.plugin,Plugin,Plugin,Long Statement,The length of the statement "Preconditions.checkState(!(classLoader instanceof PluginClassloader)`"Cannot use initialization constructor at runtime");" is 121.,39
+BungeeCord1,net.md_5.bungee.api.plugin,Plugin,getExecutorService,Long Statement,The length of the statement "service=Executors.newCachedThreadPool(new ThreadFactoryBuilder().setNameFormat(name + " Pool Thread #%1$d").setThreadFactory(new GroupedThreadFactory(this`name)).build());" is 171.,111
+BungeeCord1,net.md_5.bungee.api.plugin,PluginClassloader,loadClass0,Empty catch clause,The method has an empty catch block.,62
+BungeeCord1,net.md_5.bungee.api.plugin,PluginClassloader,loadClass0,Empty catch clause,The method has an empty catch block.,62
+BungeeCord1,net.md_5.bungee.api.plugin,PluginClassloader,loadClass0,Empty catch clause,The method has an empty catch block.,62
+BungeeCord1,net.md_5.bungee.api.plugin,PluginLogger,PluginLogger,Abstract Function Call From Constructor,The constructor PluginLogger calls a virtual method getLogger.,11
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,PluginManager,Abstract Function Call From Constructor,The constructor PluginManager calls a virtual method getLogger.,62
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,dispatchCommand,Complex Method,Cyclomatic complexity of the method is 9,161
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,dispatchCommand,Long Statement,The length of the statement "sender.sendMessage((command.getPermissionMessage() == null) ? proxy.getTranslation("no_permission") : command.getPermissionMessage());" is 134.,161
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,dispatchCommand,Long Statement,The length of the statement "sender.sendMessage(ChatColor.RED + "An internal error occurred whilst executing this command` please check the console log for details.");" is 138.,161
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugins,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.INFO`"Enabled plugin {0} version {1} by {2}"`new Object[]{plugin.getDescription().getName()`plugin.getDescription().getVersion()`plugin.getDescription().getAuthor()});" is 215.,260
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugins,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"Exception encountered when loading plugin: " + plugin.getDescription().getName()`t);" is 141.,260
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugin,Complex Method,Cyclomatic complexity of the method is 9,278
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugin,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"{0} (required by {1}) is unavailable"`new Object[]{String.valueOf(dependName)`plugin.getName()});" is 154.,278
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugin,Long Statement,The length of the statement "URLClassLoader loader=new PluginClassloader(proxy`plugin`plugin.getFile()`(libraryLoader != null) ? libraryLoader.createLoader(plugin) : null);" is 143.,278
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,enablePlugin,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.INFO`"Loaded plugin {0} version {1} by {2}"`new Object[]{plugin.getName()`plugin.getVersion()`plugin.getAuthor()});" is 163.,278
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,callEvent,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"Event {0} took {1}ms to process!"`new Object[]{event`elapsed / 1000000});" is 130.,400
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,callEvent,Magic Number,The method contains a magic number: 250000000,400
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,callEvent,Magic Number,The method contains a magic number: 1000000,400
+BungeeCord1,net.md_5.bungee.api.plugin,PluginManager,registerListener,Long Statement,The length of the statement "Preconditions.checkArgument(!method.isAnnotationPresent(Subscribe.class)`"Listener %s has registered using deprecated subscribe annotation! Please update to @EventHandler."`listener);" is 183.,427
+BungeeCord1,net.md_5.bungee.api.scheduler,TaskScheduler,schedule,Long Parameter List,The method has 5 parameters. ,61
+BungeeCord1,net.md_5.bungee.api.score,Scoreboard,addObjective,Long Statement,The length of the statement "Preconditions.checkArgument(!objectives.containsKey(objective.getName())`"Objective %s already exists in this scoreboard"`objective.getName());" is 143.,52
+BungeeCord1,net.md_5.bungee.api.score,Scoreboard,addTeam,Long Statement,The length of the statement "Preconditions.checkArgument(!teams.containsKey(team.getName())`"Team %s already exists in this scoreboard"`team.getName());" is 123.,70
+BungeeCord1,net.md_5.bungee.command,CommandBungee,execute,Long Statement,The length of the statement "sender.sendMessage(ChatColor.BLUE + "This server is running BungeeCord version " + ProxyServer.getInstance().getVersion()+ " by md_5");" is 135.,16
+BungeeCord1,net.md_5.bungee.command,CommandIP,execute,Long Statement,The length of the statement "sender.sendMessage(new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("command_ip"`user.getName()`user.getSocketAddress())).event(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD`user.getSocketAddress().toString())).create());" is 254.,18
+BungeeCord1,net.md_5.bungee.command,CommandReload,execute,Long Statement,The length of the statement "sender.sendMessage(ChatColor.BOLD.toString() + ChatColor.RED.toString() + "BungeeCord has been reloaded."+ " This is NOT advisable and you will not be supported with any issues that arise! Please restart BungeeCord ASAP.");" is 223.,17
+BungeeCord1,net.md_5.bungee.command,ConsoleCommandCompleter,complete,Long Statement,The length of the statement "candidates.addAll(proxy.getPluginManager().getCommands().stream().map(Map.Entry::getKey).filter((name) -> name.toLowerCase(Locale.ROOT).startsWith(lowerCase)).collect(Collectors.toList()));" is 189.,18
+BungeeCord1,net.md_5.bungee.util,CaseInsensitiveHashingStrategy,equals,Long Statement,The length of the statement "return o1.equals(o2) || (o1 instanceof String && o2 instanceof String && ((String)o1).toLowerCase(Locale.ROOT).equals(((String)o2).toLowerCase(Locale.ROOT)));" is 158.,17
+BungeeCord1,net.md_5.bungee.util,AddressParseTest,data,Long Statement,The length of the statement "return Stream.of(Arguments.of("127.0.0.1"`"127.0.0.1"`Util.DEFAULT_PORT)`Arguments.of("127.0.0.1:1337"`"127.0.0.1"`1337)`Arguments.of("[::1]"`"0:0:0:0:0:0:0:1"`Util.DEFAULT_PORT)`Arguments.of("[0:0:0:0::1]"`"0:0:0:0:0:0:0:1"`Util.DEFAULT_PORT)`Arguments.of("[0:0:0:0:0:0:0:1]"`"0:0:0:0:0:0:0:1"`Util.DEFAULT_PORT)`Arguments.of("[::1]:1337"`"0:0:0:0:0:0:0:1"`1337)`Arguments.of("[0:0:0:0::1]:1337"`"0:0:0:0:0:0:0:1"`1337)`Arguments.of("[0:0:0:0:0:0:0:1]:1337"`"0:0:0:0:0:0:0:1"`1337)`Arguments.of("unix:///var/run/bungee.sock"`"/var/run/bungee.sock"`-1));" is 554.,18
+BungeeCord1,net.md_5.bungee.util,AddressParseTest,data,Magic Number,The method contains a magic number: 1337,18
+BungeeCord1,net.md_5.bungee.util,AddressParseTest,data,Magic Number,The method contains a magic number: 1337,18
+BungeeCord1,net.md_5.bungee.util,AddressParseTest,data,Magic Number,The method contains a magic number: 1337,18
+BungeeCord1,net.md_5.bungee.util,AddressParseTest,data,Magic Number,The method contains a magic number: 1337,18
+BungeeCord1,net.md_5.bungee.util,UUIDTest,testMany,Magic Number,The method contains a magic number: 1000,19
+BungeeCord1,net.md_5.bungee.util,AllowedCharacters,isChatAllowedCharacter,Magic Number,The method contains a magic number: 127,10
+BungeeCord1,net.md_5.bungee.util,AllowedCharacters,isValidName,Magic Number,The method contains a magic number: 16,28
+BungeeCord1,net.md_5.bungee.util,ChatComponentTransformer,transform,Long Statement,The length of the statement "List<BaseComponent> list=root.getExtra().stream().map((extra) -> transform(player`transformHover`extra)).collect(Collectors.toList());" is 134.,80
+BungeeCord1,net.md_5.bungee.util,AddressUtilTest,testScope,Magic Number,The method contains a magic number: 25577,10
+BungeeCord1,net.md_5.bungee.util,AddressUtilTest,testScope,Magic Number,The method contains a magic number: 25577,10
+BungeeCord1,net.md_5.bungee,Util,getAddr,Empty catch clause,The method has an empty catch block.,21
+BungeeCord1,net.md_5.bungee,Util,exception,Long Statement,The length of the statement "return t.getClass().getSimpleName() + " : " + t.getMessage()+ ((includeLineNumbers && trace.length > 0) ? " @ " + t.getStackTrace()[0].getClassName() + ":"+ t.getStackTrace()[0].getLineNumber() : "");" is 200.,95
+BungeeCord1,net.md_5.bungee,Util,getUUID,Long Statement,The length of the statement "return new UUID(UnsignedLongs.parseUnsignedLong(uuid.substring(0`16)`16)`UnsignedLongs.parseUnsignedLong(uuid.substring(16)`16));" is 129.,131
+BungeeCord1,net.md_5.bungee,Util,getUUID,Magic Number,The method contains a magic number: 16,131
+BungeeCord1,net.md_5.bungee,Util,getUUID,Magic Number,The method contains a magic number: 16,131
+BungeeCord1,net.md_5.bungee,Util,getUUID,Magic Number,The method contains a magic number: 16,131
+BungeeCord1,net.md_5.bungee,Util,getUUID,Magic Number,The method contains a magic number: 16,131
+BungeeCord1,net.md_5.bungee,Bootstrap,main,Magic Number,The method contains a magic number: 52.0,6
+BungeeCord1,net.md_5.bungee,NativeCipherTest,testBenchmark,Long Statement,The length of the statement "System.out.println(String.format("Encryption Iteration: %d` Elapsed: %d ms"`BENCHMARK_COUNT`System.currentTimeMillis() - start));" is 129.,114
+BungeeCord1,net.md_5.bungee,NativeCipherTest,testBenchmark,Long Statement,The length of the statement "System.out.println(String.format("Decryption Iteration: %d` Elapsed: %d ms"`BENCHMARK_COUNT`System.currentTimeMillis() - start));" is 129.,114
+BungeeCord1,net.md_5.bungee,NativeCipherTest,testBenchmark,Magic Number,The method contains a magic number: 12,114
+BungeeCord1,net.md_5.bungee,NativeZlibTest,test,Magic Number,The method contains a magic number: 22,42
+BungeeCord1,net.md_5.bungee,NativeZlibTest,test,Magic Number,The method contains a magic number: 9,42
+BungeeCord1,net.md_5.bungee,NativeZlibTest,testExceptionImpl,Long Statement,The length of the statement "assertThrows(DataFormatException.class`() -> zlib.process(originalBuf`decompressed)`"Decompressing random bytes did not result in a DataFormatException!");" is 155.,81
+BungeeCord1,net.md_5.bungee,NativeZlibTest,testExceptionImpl,Magic Number,The method contains a magic number: 12,81
+BungeeCord1,net.md_5.bungee,BungeeCord,BungeeCord,Abstract Function Call From Constructor,The constructor BungeeCord calls a virtual method getPluginManager.,191
+BungeeCord1,net.md_5.bungee,BungeeCord,BungeeCord,Long Statement,The length of the statement "Preconditions.checkState(new File(".").getAbsolutePath().indexOf('!') == -1`"Cannot use BungeeCord in directory with ! in path.");" is 130.,191
+BungeeCord1,net.md_5.bungee,BungeeCord,start,Long Statement,The length of the statement "if (System.getProperty("io.netty.leakDetectionLevel") == null && System.getProperty("io.netty.leakDetection.level") == null) {" is 126.,260
+BungeeCord1,net.md_5.bungee,BungeeCord,start,Long Statement,The length of the statement "getLogger().warning("MinecraftForge support is currently unmaintained and may have unresolved issues. Please use at your own risk.");" is 133.,260
+BungeeCord1,net.md_5.bungee,BungeeCord,start,Magic Number,The method contains a magic number: 5,260
+BungeeCord1,net.md_5.bungee,BungeeCord,startListeners,Long Statement,The length of the statement "getLogger().log(Level.WARNING`"Using PROXY protocol for listener {0}` please ensure this listener is adequately firewalled."`info.getSocketAddress());" is 150.,329
+BungeeCord1,net.md_5.bungee,BungeeCord,startListeners,Long Statement,The length of the statement "new ServerBootstrap().channel(PipelineUtils.getServerChannel(info.getSocketAddress())).option(ChannelOption.SO_REUSEADDR`true).childAttr(PipelineUtils.LISTENER`info).childHandler(PipelineUtils.SERVER_CHILD).group(eventLoops).localAddress(info.getSocketAddress()).bind().addListener(listener);" is 292.,329
+BungeeCord1,net.md_5.bungee,BungeeCord,startListeners,Long Statement,The length of the statement "Preconditions.checkArgument(info.getSocketAddress() instanceof InetSocketAddress`"Can only create query listener on UDP address");" is 130.,329
+BungeeCord1,net.md_5.bungee,BungeeCord,startListeners,Long Statement,The length of the statement "new RemoteQuery(this`info).start(PipelineUtils.getDatagramChannel()`new InetSocketAddress(info.getHost().getAddress()`info.getQueryPort())`eventLoops`bindListener);" is 164.,329
+BungeeCord1,net.md_5.bungee,BungeeCord,independentThreadStop,Complex Method,Cyclomatic complexity of the method is 8,428
+BungeeCord1,net.md_5.bungee,BungeeCord,independentThreadStop,Empty catch clause,The method has an empty catch block.,428
+BungeeCord1,net.md_5.bungee,BungeeCord,independentThreadStop,Empty catch clause,The method has an empty catch block.,428
+BungeeCord1,net.md_5.bungee,BungeeCord,independentThreadStop,Magic Number,The method contains a magic number: 500,428
+BungeeCord1,net.md_5.bungee,BungeeCord,getVersion,Long Statement,The length of the statement "return (BungeeCord.class.getPackage().getImplementationVersion() == null) ? "unknown" : BungeeCord.class.getPackage().getImplementationVersion();" is 145.,547
+BungeeCord1,net.md_5.bungee,BungeeCord,getPlayerByOfflineUUID,Magic Number,The method contains a magic number: 3,631
+BungeeCord1,net.md_5.bungee,BungeeCord,registerChannels,Long Statement,The length of the statement "return new PluginMessage("minecraft:register"`String.join("\00"`Iterables.transform(pluginChannels`PluginMessage.MODERNISE)).getBytes(StandardCharsets.UTF_8)`false);" is 165.,693
+BungeeCord1,net.md_5.bungee,BungeeCord,getGameVersion,Long Statement,The length of the statement "return ProtocolConstants.SUPPORTED_VERSIONS.get(0) + "-" + ProtocolConstants.SUPPORTED_VERSIONS.get(ProtocolConstants.SUPPORTED_VERSIONS.size() - 1);" is 149.,709
+BungeeCord1,net.md_5.bungee,BungeeCord,addConnection,Complex Conditional,The conditional expression connections.containsKey(con.getName()) || connectionsByUUID.containsKey(con.getUniqueId()) || connectionsByOfflineUUID.containsKey(offlineId) is complex.,759
+BungeeCord1,net.md_5.bungee,BungeeCord,addConnection,Long Statement,The length of the statement "if (connections.containsKey(con.getName()) || connectionsByUUID.containsKey(con.getUniqueId()) || connectionsByOfflineUUID.containsKey(offlineId)) {" is 148.,759
+BungeeCord1,net.md_5.bungee,BungeeCord,addConnection,Magic Number,The method contains a magic number: 3,759
+BungeeCord1,net.md_5.bungee,BungeeCord,matchPlayer,Long Statement,The length of the statement "return (input == null) ? false : input.getName().toLowerCase(Locale.ROOT).startsWith(partialName.toLowerCase(Locale.ROOT));" is 123.,807
+BungeeCord1,net.md_5.bungee,BungeeCord,apply,Long Statement,The length of the statement "return (input == null) ? false : input.getName().toLowerCase(Locale.ROOT).startsWith(partialName.toLowerCase(Locale.ROOT));" is 123.,821
+BungeeCord1,net.md_5.bungee,BungeeCordLauncher,main,Complex Method,Cyclomatic complexity of the method is 9,19
+BungeeCord1,net.md_5.bungee,BungeeCordLauncher,main,Long Statement,The length of the statement "if (BungeeCord.class.getPackage().getSpecificationVersion() != null && System.getProperty("IReallyKnowWhatIAmDoingISwear") == null) {" is 133.,19
+BungeeCord1,net.md_5.bungee,BungeeCordLauncher,main,Magic Number,The method contains a magic number: 8,19
+BungeeCord1,net.md_5.bungee,BungeeCordLauncher,main,Magic Number,The method contains a magic number: 10,19
+BungeeCord1,net.md_5.bungee,BungeeServerInfo,ping,Complex Conditional,The conditional expression pingCache > 0 && cachedPing != null && (System.currentTimeMillis() - lastPing) > pingCache is complex.,156
+BungeeCord1,net.md_5.bungee,BungeeServerInfo,ping,Long Statement,The length of the statement "future.channel().pipeline().get(HandlerBoss.class).setHandler(new PingHandler(BungeeServerInfo.this`callback`protocolVersion));" is 127.,156
+BungeeCord1,net.md_5.bungee,BungeeServerInfo,ping,Long Statement,The length of the statement "new Bootstrap().channel(PipelineUtils.getChannel(socketAddress)).group(BungeeCord.getInstance().eventLoops).handler(PipelineUtils.BASE_SERVERSIDE).option(ChannelOption.CONNECT_TIMEOUT_MILLIS`BungeeCord.getInstance().getConfig().getRemotePingTimeout()).remoteAddress(socketAddress).connect().addListener(listener);" is 313.,156
+BungeeCord1,net.md_5.bungee,BungeeServerInfo,operationComplete,Long Statement,The length of the statement "future.channel().pipeline().get(HandlerBoss.class).setHandler(new PingHandler(BungeeServerInfo.this`callback`protocolVersion));" is 127.,174
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Long Statement,The length of the statement "TitlePacketHolder<TitleTimes> title=new TitlePacketHolder<>(new net.md_5.bungee.protocol.packet.Title(Action.TIMES)`new TitleTimes());" is 134.,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 20,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 60,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 20,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 20,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 60,32
+BungeeCord1,net.md_5.bungee,BungeeTitle,createAnimationPacket,Magic Number,The method contains a magic number: 20,32
+BungeeCord1,net.md_5.bungee,ConnectionThrottle,ConnectionThrottle,Long Statement,The length of the statement "this.throttle=CacheBuilder.newBuilder().ticker(ticker).concurrencyLevel(Runtime.getRuntime().availableProcessors()).initialCapacity(100).expireAfterWrite(throttleTime`TimeUnit.MILLISECONDS).build(new CacheLoader<InetAddress`AtomicInteger>(){" is 241.,25
+BungeeCord1,net.md_5.bungee,ConnectionThrottle,ConnectionThrottle,Magic Number,The method contains a magic number: 100,25
+BungeeCord1,net.md_5.bungee,EncryptionUtil,encryptRequest,Magic Number,The method contains a magic number: 16,70
+BungeeCord1,net.md_5.bungee,EncryptionUtil,encryptRequest,Magic Number,The method contains a magic number: 4,70
+BungeeCord1,net.md_5.bungee,EncryptionUtil,check,Long Statement,The length of the statement "ByteBuffer.wrap(check).order(ByteOrder.BIG_ENDIAN).putLong(uuid.getMostSignificantBits()).putLong(uuid.getLeastSignificantBits()).putLong(publicKey.getExpiry()).put(encoded);" is 174.,80
+BungeeCord1,net.md_5.bungee,EncryptionUtil,check,Long Statement,The length of the statement "check=(publicKey.getExpiry() + "-----BEGIN RSA PUBLIC KEY-----\n" + MIME_ENCODER.encodeToString(getPubkey(publicKey.getKey()).getEncoded())+ "\n-----END RSA PUBLIC KEY-----\n").getBytes(StandardCharsets.US_ASCII);" is 213.,80
+BungeeCord1,net.md_5.bungee,EncryptionUtil,check,Magic Number,The method contains a magic number: 24,80
+BungeeCord1,net.md_5.bungee,Metrics,run,Empty catch clause,The method has an empty catch block.,35
+BungeeCord1,net.md_5.bungee,PlayerSkinConfiguration,hasLeftSleeve,Magic Number,The method contains a magic number: 2,40
+BungeeCord1,net.md_5.bungee,PlayerSkinConfiguration,hasRightSleeve,Magic Number,The method contains a magic number: 3,46
+BungeeCord1,net.md_5.bungee,PlayerSkinConfiguration,hasLeftPants,Magic Number,The method contains a magic number: 4,52
+BungeeCord1,net.md_5.bungee,PlayerSkinConfiguration,hasRightPants,Magic Number,The method contains a magic number: 5,58
+BungeeCord1,net.md_5.bungee,PlayerSkinConfiguration,hasHat,Magic Number,The method contains a magic number: 6,64
+BungeeCord1,net.md_5.bungee,ServerConnector,connected,Complex Conditional,The conditional expression profile != null && profile.getProperties() != null && profile.getProperties().length > 0 is complex.,104
+BungeeCord1,net.md_5.bungee,ServerConnector,connected,Long Statement,The length of the statement "Handshake copiedHandshake=new Handshake(originalHandshake.getProtocolVersion()`originalHandshake.getHost()`originalHandshake.getPort()`2);" is 138.,104
+BungeeCord1,net.md_5.bungee,ServerConnector,connected,Long Statement,The length of the statement "String newHost=copiedHandshake.getHost() + "\00" + AddressUtil.sanitizeAddress(user.getAddress())+ "\00"+ user.getUUID();" is 121.,104
+BungeeCord1,net.md_5.bungee,ServerConnector,connected,Magic Number,The method contains a magic number: 2,104
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Magic Number,The method contains a magic number: 16,142
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Complex Conditional,The conditional expression user.getServer() != null && user.getForgeClientHandler().isHandshakeComplete() && user.getServer().isForgeServer() is complex.,151
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Long Statement,The length of the statement "if (user.getServer() != null && user.getForgeClientHandler().isHandshakeComplete() && user.getServer().isForgeServer()) {" is 121.,151
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Long Statement,The length of the statement "user.retrieveCookie(cookieRequest.getCookie()).thenAccept((cookie) -> ch.write(new CookieResponse(cookieRequest.getCookie()`cookie)));" is 134.,193
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Complex Method,Cyclomatic complexity of the method is 17,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Parameter List,The method has 7 parameters. ,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "ch.write(new PluginMessage(user.getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_13 ? "minecraft:register" : "REGISTER"`Joiner.on("\0").join(registeredChannels).getBytes(StandardCharsets.UTF_8)`false));" is 222.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "Login modLogin=new Login(login.getEntityId()`login.isHardcore()`login.getGameMode()`login.getPreviousGameMode()`login.getWorldNames()`login.getDimensions()`login.getDimension()`login.getWorldName()`login.getSeed()`login.getDifficulty()`(byte)user.getPendingConnection().getListener().getTabListSize()`login.getLevelType()`login.getViewDistance()`login.getSimulationDistance()`login.isReducedDebugInfo()`login.isNormalRespawn()`login.isLimitedCrafting()`login.isDebug()`login.isFlat()`login.getDeathLocation()`login.getPortalCooldown()`login.isSecureProfile());" is 560.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new Respawn(login.getDimension()`login.getWorldName()`login.getSeed()`login.getDifficulty()`login.getGameMode()`login.getPreviousGameMode()`login.getLevelType()`login.isDebug()`login.isFlat()`(byte)0`login.getDeathLocation()`login.getPortalCooldown()));" is 278.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new PluginMessage(user.getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_13 ? "minecraft:brand" : "MC|Brand"`DefinedPacket.toArray(brand)`handshakeHandler != null && handshakeHandler.isServerForge()));" is 245.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new ScoreboardObjective(objective.getName()`(user.getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_13) ? Either.right(ComponentSerializer.deserialize(objective.getValue())) : Either.left(objective.getValue())`ScoreboardObjective.HealthDisplay.fromString(objective.getType())`(byte)1`null));" is 335.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new ScoreboardScore(score.getItemName()`(byte)1`score.getScoreName()`score.getValue()`null`null));" is 123.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new EntityStatus(user.getClientEntityId()`login.isReducedDebugInfo() ? EntityStatus.DEBUG_INFO_REDUCED : EntityStatus.DEBUG_INFO_NORMAL));" is 163.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new Respawn((Integer)login.getDimension() >= 0 ? -1 : 0`login.getWorldName()`login.getSeed()`login.getDifficulty()`login.getGameMode()`login.getPreviousGameMode()`login.getLevelType()`login.isDebug()`login.isFlat()`(byte)0`login.getDeathLocation()`login.getPortalCooldown()));" is 301.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,handleLogin,Long Statement,The length of the statement "user.unsafe().sendPacket(new Respawn(login.getDimension()`login.getWorldName()`login.getSeed()`login.getDifficulty()`login.getGameMode()`login.getPreviousGameMode()`login.getLevelType()`login.isDebug()`login.isFlat()`(byte)0`login.getDeathLocation()`login.getPortalCooldown()));" is 278.,209
+BungeeCord1,net.md_5.bungee,ServerConnector,cutThrough,Long Statement,The length of the statement "user.unsafe().sendPacket(new LoginSuccess(user.getRewriteId()`user.getName()`(loginProfile == null) ? null : loginProfile.getProperties()));" is 140.,349
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Long Statement,The length of the statement "ServerKickEvent event=new ServerKickEvent(user`target`new BaseComponent[]{kick.getMessage()}`def`ServerKickEvent.State.CONNECTING);" is 131.,404
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Complex Method,Cyclomatic complexity of the method is 8,437
+BungeeCord1,net.md_5.bungee,ServerConnector,handle,Long Statement,The length of the statement "if (pluginMessage.getTag().equals(ForgeConstants.FML_HANDSHAKE_TAG) || pluginMessage.getTag().equals(ForgeConstants.FORGE_REGISTER)) {" is 134.,437
+BungeeCord1,net.md_5.bungee,UserConnection,init,Long Statement,The length of the statement "forgeClientHandler.setFmlTokenInHandshake(this.getPendingConnection().getExtraDataInHandshake().contains(ForgeConstants.FML_HANDSHAKE_TOKEN));" is 142.,159
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Complex Conditional,The conditional expression request.isRetry() && def != null && (getServer() == null || def != getServer().getInfo()) is complex.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Complex Conditional,The conditional expression getPendingConnection().getListener().isSetLocalAddress() && !PlatformDependent.isWindows() && getPendingConnection().getListener().getSocketAddress() instanceof InetSocketAddress is complex.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Complex Method,Cyclomatic complexity of the method is 13,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "ch.pipeline().addAfter(PipelineUtils.FRAME_DECODER`PipelineUtils.PACKET_DECODER`new MinecraftDecoder(Protocol.HANDSHAKE`false`getPendingConnection().getVersion()));" is 164.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "ch.pipeline().addAfter(PipelineUtils.FRAME_PREPENDER`PipelineUtils.PACKET_ENCODER`new MinecraftEncoder(Protocol.HANDSHAKE`false`getPendingConnection().getVersion()));" is 166.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "@Override @SuppressWarnings("ThrowableResultIgnored") public void operationComplete( ChannelFuture future) throws Exception {" is 125.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "callback.done((future.isSuccess()) ? ServerConnectRequest.Result.SUCCESS : ServerConnectRequest.Result.FAIL`future.cause());" is 124.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "Bootstrap b=new Bootstrap().channel(PipelineUtils.getChannel(target.getAddress())).group(ch.getHandle().eventLoop()).handler(initializer).option(ChannelOption.CONNECT_TIMEOUT_MILLIS`request.getConnectTimeout()).remoteAddress(target.getAddress());" is 246.,304
+BungeeCord1,net.md_5.bungee,UserConnection,connect,Long Statement,The length of the statement "if (getPendingConnection().getListener().isSetLocalAddress() && !PlatformDependent.isWindows() && getPendingConnection().getListener().getSocketAddress() instanceof InetSocketAddress) {" is 185.,304
+BungeeCord1,net.md_5.bungee,UserConnection,initChannel,Long Statement,The length of the statement "ch.pipeline().addAfter(PipelineUtils.FRAME_DECODER`PipelineUtils.PACKET_DECODER`new MinecraftDecoder(Protocol.HANDSHAKE`false`getPendingConnection().getVersion()));" is 164.,352
+BungeeCord1,net.md_5.bungee,UserConnection,initChannel,Long Statement,The length of the statement "ch.pipeline().addAfter(PipelineUtils.FRAME_PREPENDER`PipelineUtils.PACKET_ENCODER`new MinecraftEncoder(Protocol.HANDSHAKE`false`getPendingConnection().getVersion()));" is 166.,352
+BungeeCord1,net.md_5.bungee,UserConnection,operationComplete,Complex Conditional,The conditional expression request.isRetry() && def != null && (getServer() == null || def != getServer().getInfo()) is complex.,363
+BungeeCord1,net.md_5.bungee,UserConnection,operationComplete,Long Statement,The length of the statement "callback.done((future.isSuccess()) ? ServerConnectRequest.Result.SUCCESS : ServerConnectRequest.Result.FAIL`future.cause());" is 124.,363
+BungeeCord1,net.md_5.bungee,UserConnection,disconnect0,Long Statement,The length of the statement "bungee.getLogger().log(Level.INFO`"[{0}] disconnected with: {1}"`new Object[]{getName()`BaseComponent.toLegacyText(reason)});" is 125.,429
+BungeeCord1,net.md_5.bungee,UserConnection,hasPermission,Long Statement,The length of the statement "return bungee.getPluginManager().callEvent(new PermissionCheckEvent(this`permission`permissions.contains(permission))).hasPermission();" is 135.,597
+BungeeCord1,net.md_5.bungee,UserConnection,getLocale,Long Statement,The length of the statement "return (locale == null && settings != null) ? locale=Locale.forLanguageTag(settings.getLocale().replace('_'`'-')) : locale;" is 123.,656
+BungeeCord1,net.md_5.bungee,UserConnection,getViewDistance,Magic Number,The method contains a magic number: 10,662
+BungeeCord1,net.md_5.bungee,UserConnection,getChatMode,Magic Number,The method contains a magic number: 2,668
+BungeeCord1,net.md_5.bungee,UserConnection,getChatMode,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@68bb2baa,668
+BungeeCord1,net.md_5.bungee,UserConnection,getSkinParts,Long Statement,The length of the statement "return (settings != null) ? new PlayerSkinConfiguration(settings.getSkinParts()) : PlayerSkinConfiguration.SKIN_SHOW_ALL;" is 121.,694
+BungeeCord1,net.md_5.bungee,UserConnection,setCompressionThreshold,Complex Conditional,The conditional expression !ch.isClosing() && this.compressionThreshold == -1 && compressionThreshold >= 0 is complex.,761
+BungeeCord1,net.md_5.bungee,UserConnection,storeCookie,Long Statement,The length of the statement "Preconditions.checkState(getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_20_5`"Cookies are only supported in 1.20.5 and above");" is 149.,789
+BungeeCord1,net.md_5.bungee,UserConnection,transfer,Long Statement,The length of the statement "Preconditions.checkState(getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_20_5`"Transfers are only supported in 1.20.5 and above");" is 151.,797
+BungeeCord1,net.md_5.bungee,ThrottleTest,testThrottle,Magic Number,The method contains a magic number: 10,26
+BungeeCord1,net.md_5.bungee,ThrottleTest,testThrottle,Magic Number,The method contains a magic number: 3,26
+BungeeCord1,net.md_5.bungee,ThrottleTest,testThrottle,Magic Number,The method contains a magic number: 50,26
+BungeeCord1,net.md_5.bungee.api.chat,BaseComponent,BaseComponent,Abstract Function Call From Constructor,The constructor BaseComponent calls a virtual method duplicate.,69
+BungeeCord1,net.md_5.bungee.api.chat,BaseComponent,copyFormatting,Complex Method,Cyclomatic complexity of the method is 13,105
+BungeeCord1,net.md_5.bungee.api.chat,BaseComponent,applyStyle,Complex Method,Cyclomatic complexity of the method is 8,524
+BungeeCord1,net.md_5.bungee.api.chat,ComponentBuilder,ComponentBuilder,Abstract Function Call From Constructor,The constructor ComponentBuilder calls a virtual method duplicate.,43
+BungeeCord1,net.md_5.bungee.api.chat,ComponentBuilder,setCursor,Complex Conditional,The conditional expression (this.cursor != pos) && (pos < 0 || pos >= parts.size()) is complex.,114
+BungeeCord1,net.md_5.bungee.api.chat,ComponentStyle,isEmpty,Long Statement,The length of the statement "return color == null && font == null && bold == null && italic == null && underlined == null && strikethrough == null && obfuscated == null;" is 140.,191
+BungeeCord1,net.md_5.bungee.api.chat,ComponentStyle,builder,Long Statement,The length of the statement "return new ComponentStyleBuilder().color(other.color).font(other.font).bold(other.bold).italic(other.italic).underlined(other.underlined).strikethrough(other.strikethrough).obfuscated(other.obfuscated);" is 202.,219
+BungeeCord1,net.md_5.bungee.api.chat,HoverEvent,getClass,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@2e77b250,122
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Complex Method,Cyclomatic complexity of the method is 18,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Long Statement,The length of the statement "component.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL`urlString.startsWith("http") ? urlString : "http://" + urlString));" is 133.,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 32,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 12,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 6,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 2,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 2,93
+BungeeCord1,net.md_5.bungee.api.chat,TextComponent,populateComponentStructure,Magic Number,The method contains a magic number: 12,93
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponent,TranslatableComponent,Abstract Function Call From Constructor,The constructor TranslatableComponent calls a virtual method duplicate.,38
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponent,convert,Complex Method,Cyclomatic complexity of the method is 12,172
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponent,convert,Magic Number,The method contains a magic number: 2,172
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testEmptyComponentBuilderBuild,Long Statement,The length of the statement "testEmptyComponentBuilder(ComponentBuilder::build`(component) -> assertNull(component.getExtra())`(component`size) -> assertEquals(component.getExtra().size()`size));" is 166.,15
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testEmptyComponentBuilderCreate,Long Statement,The length of the statement "testEmptyComponentBuilder(ComponentBuilder::create`(components) -> assertEquals(components.length`0)`(components`size) -> assertEquals(size`components.length));" is 160.,25
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderAppendBuild,Long Statement,The length of the statement "testBuilderAppend(() -> new HoverEvent(HoverEvent.Action.SHOW_TEXT`new Text(new ComponentBuilder("Hello world").build()))`ComponentBuilder::build`(component`index) -> component.getExtra().get(index)`(component) -> BaseComponent.toPlainText(component)`WHITE.toString() + YELLOW + "Hello "+ GREEN+ "world!"`(component) -> BaseComponent.toLegacyText(component));" is 359.,35
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderAppendCreate,Long Statement,The length of the statement "testBuilderAppend(() -> new HoverEvent(HoverEvent.Action.SHOW_TEXT`new ComponentBuilder("Hello world").create())`ComponentBuilder::create`(components`index) -> components[index]`BaseComponent::toPlainText`YELLOW + "Hello " + GREEN+ "world!"`BaseComponent::toLegacyText);" is 270.,48
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testComponentBuilderCursorInvalidPos,Magic Number,The method contains a magic number: 2,80
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testComponentBuilderCursor,Magic Number,The method contains a magic number: 2,90
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testComponentBuilderCursor,Magic Number,The method contains a magic number: 3,90
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testComponentBuilderCursor,Magic Number,The method contains a magic number: 3,90
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderCreate,Long Statement,The length of the statement "testBuilder(ComponentBuilder::create`BaseComponent::toPlainText`RED + "Hello " + BLUE+ BOLD+ "World"+ YELLOW+ BOLD+ "!"`BaseComponent::toLegacyText);" is 149.,134
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderBuild,Long Statement,The length of the statement "testBuilder(ComponentBuilder::build`(component) -> BaseComponent.toPlainText(component)`WHITE.toString() + RED + "Hello "+ BLUE+ BOLD+ "World"+ YELLOW+ BOLD+ "!"`(component) -> BaseComponent.toLegacyText(component));" is 216.,145
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContentsCreate,Long Statement,The length of the statement "HoverEvent hoverEvent=new HoverEvent(HoverEvent.Action.SHOW_TEXT`new Text(new ComponentBuilder("First").create())`new Text(new ComponentBuilder("Second").create()));" is 165.,156
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContentsCreate,Long Statement,The length of the statement "this.testHoverEventContents(hoverEvent`ComponentSerializer::parse`(components) -> components[0].getHoverEvent()`ComponentsTest::testDissembleReassemble);" is 153.,156
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContentsBuild,Long Statement,The length of the statement "HoverEvent hoverEvent=new HoverEvent(HoverEvent.Action.SHOW_TEXT`new Text(new ComponentBuilder("First").build())`new Text(new ComponentBuilder("Second").build()));" is 163.,197
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContentsBuild,Long Statement,The length of the statement "this.testHoverEventContents(hoverEvent`ComponentSerializer::deserialize`BaseComponent::getHoverEvent`ComponentsTest::testDissembleReassemble);" is 142.,197
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderAppend,Long Parameter List,The method has 6 parameters. ,216
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testEmptyComponentBuilder,Magic Number,The method contains a magic number: 3,231
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderAppendMixedComponents,Magic Number,The method contains a magic number: 2,245
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilderAppendMixedComponents,Magic Number,The method contains a magic number: 3,245
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testBuilder,Long Statement,The length of the statement "T component=componentBuilder.apply(new ComponentBuilder("Hello ").color(RED).append("World").bold(true).color(BLUE).append("!").color(YELLOW));" is 143.,274
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContents,Long Statement,The length of the statement "String json="{\"italic\":true`\"color\":\"gray\"`\"translate\":\"chat.type.admin\"`\"with\":[{\"text\":\"@\"}" + "`{\"translate\":\"commands.give.success.single\"`\"with\":[\"1\"`{\"color\":\"white\"" + "`\"hoverEvent\":{\"action\":\"show_item\"`\"contents\":{\"id\":\"minecraft:diamond_sword\"`\"tag\":\""+ "{Damage:0`display:{Lore:['\\\"test lore'!\\\"']`Name:'\\\"test\\\"'}}\"}}`"+ "\"extra\":[{\"italic\":true`\"extra\":[{\"text\":\"test\"}]`\"text\":\"\"}`{\"text\":\"]\"}]`"+ "\"text\":\"[\"}`{\"insertion\":\"Name\"`\"clickEvent\":{\"action\":\"suggest_command\"`\"value\":"+ "\"/tell Name \"}`\"hoverEvent\":{\"action\":\"show_entity\"`\"contents\":"+ "{\"type\":\"minecraft:player\"`\"id\":\"00000000-0000-0000-0000-00000000000000\"`\"name\":"+ "{\"text\":\"Name\"}}}`\"text\":\"Name\"}]}]}";" is 802.,291
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsBuilderTest,testHoverEventContents,Magic Number,The method contains a magic number: 2,291
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsFormatTest,testFormatRetentionCopyFormattingCreate,Long Statement,The length of the statement "testFormatRetentionCopyFormatting(() -> new HoverEvent(HoverEvent.Action.SHOW_TEXT`new ComponentBuilder("Test").create()));" is 123.,50
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsFormatTest,testFormatRetentionCopyFormattingBuild,Long Statement,The length of the statement "testFormatRetentionCopyFormatting(() -> new HoverEvent(HoverEvent.Action.SHOW_TEXT`new Text(new ComponentBuilder("Test").build())));" is 132.,56
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsFormatTest,testBuilderFormatRetention,Long Statement,The length of the statement "T noneRetention=componentBuilder.apply(new ComponentBuilder("Hello ").color(RED).append("World"`ComponentBuilder.FormatRetention.NONE));" is 136.,95
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsFormatTest,testBuilderFormatRetention,Long Statement,The length of the statement "T formattingRetention=componentBuilder.apply(new ComponentBuilder("Hello ").color(RED).event(testEvent).append("World"`ComponentBuilder.FormatRetention.FORMATTING));" is 165.,95
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsFormatTest,testBuilderFormatRetention,Long Statement,The length of the statement "T eventRetention=componentBuilder.apply(new ComponentBuilder("Hello ").color(RED).event(testEvent).event(testClickEvent).append("World"`ComponentBuilder.FormatRetention.EVENTS));" is 178.,95
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testBuilderAppendLegacyCreate,Long Statement,The length of the statement "testBuilderAppendLegacy(ComponentBuilder::create`BaseComponent::toPlainText`YELLOW + "Hello " + GREEN+ "world!"`BaseComponent::toLegacyText);" is 141.,29
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testLegacyConverter,Long Statement,The length of the statement "assertEquals(WHITE + "Text " + WHITE+ "http://spigotmc.org"+ WHITE+ " "+ GREEN+ "google.com/test"+ GREEN`BaseComponent.toLegacyText(test2));" is 140.,40
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testLegacyConverter,Magic Number,The method contains a magic number: 3,40
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testBuilderAppendLegacyBuild,Long Statement,The length of the statement "testBuilderAppendLegacy(ComponentBuilder::build`(component) -> BaseComponent.toPlainText(component)`WHITE.toString() + YELLOW + "Hello "+ GREEN+ "world!"`(component) -> BaseComponent.toLegacyText(component));" is 208.,66
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testLegacyResetInBuilder,Long Statement,The length of the statement "String expected="{\"extra\":[{\"underlined\":true`\"color\":\"dark_red\"`\"text\":\"44444\"}`{\"color\":" + "\"white\"`\"text\":\"dd\"}`{\"bold\":true`\"color\":\"gold\"`\"text\":\"6666\"}]`\"text\":\"\"}";" is 206.,153
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsLegacyTest,testLegacyResetInBuilder,Long Statement,The length of the statement "assertEquals("{\"extra\":[{\"underlined\":true`\"color\":\"dark_red\"`\"text\":\"44444\"}`" + "{\"color\":\"white\"`\"text\":\"dd\"}`{\"bold\":true`\"color\":\"gold\"`\"text\":\"6666\"}`" + "{\"color\":\"white\"`\"text\":\"rrrr\"}]`\"text\":\"\"}"`test2);" is 255.,153
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testItemParse,Long Statement,The length of the statement "textComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM`new BaseComponent[]{new TextComponent("{id:\"minecraft:netherrack\"`Count:47b}")}));" is 155.,46
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testItemParse,Long Statement,The length of the statement "json="{\"hoverEvent\":{\"action\":\"show_item\"`\"value\":[{\"text\":\"{id:\\\"minecraft:netherrack\\\"`Count:47b}\"}]}`\"text\":\"Test\"}";" is 140.,46
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testItemParse,Long Statement,The length of the statement "json="{\"extra\":[{\"text\":\"[\"}`{\"extra\":[{\"translate\":\"block.minecraft.dirt\"}]`\"text\":\"\"}`{\"text\":\"]\"}]`\"hoverEvent\":{\"action\":\"show_item\"`\"value\":[" + hoverVal + "]}`\"text\":\"\"}";" is 209.,46
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testArrayUUIDParse,Long Statement,The length of the statement "BaseComponent[] uuidComponent=ComponentSerializer.parse("{\"translate\":\"multiplayer.player.joined\"`\"with\":[{\"text\":\"Rexcantor64\"`\"hoverEvent\":{\"contents\":{\"type\":\"minecraft:player\"`\"id\":[1328556382`-2138814985`-1895806765`-1039963041]`\"name\":\"Rexcantor64\"}`\"action\":\"show_entity\"}`\"insertion\":\"Rexcantor64\"`\"clickEvent\":{\"action\":\"suggest_command\"`\"value\":\"/tell Rexcantor64 \"}}]`\"color\":\"yellow\"}");" is 445.,92
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testArrayUUIDParse,Long Statement,The length of the statement "assertEquals("4f30295e-8084-45f7-8f00-48d3c2036c5f"`((Entity)((TranslatableComponent)uuidComponent[0]).getWith().get(0).getHoverEvent().getContents().get(0)).getId());" is 167.,92
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testScore,Long Statement,The length of the statement "BaseComponent[] component=ComponentSerializer.parse("{\"score\":{\"name\":\"@p\"`\"objective\":\"TEST\"`\"value\":\"hello\"}}");" is 128.,198
+BungeeCord1,net.md_5.bungee.api.chat,ComponentsTest,testStyle,Long Statement,The length of the statement "ComponentStyle style=ComponentSerializer.deserializeStyle("{\"color\":\"red\"`\"font\":\"minecraft:example\"`\"bold\":true`\"italic\":false`\"obfuscated\":true}");" is 163.,208
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponentTest,testMissingPlaceholdersAdded,Long Statement,The length of the statement "assertEquals(WHITE + "Test string with " + WHITE+ "2"+ WHITE+ " placeholders: "+ WHITE+ "aoeu"`testComponent.toLegacyText());" is 125.,11
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponentTest,testMissingPlaceholdersAdded,Magic Number,The method contains a magic number: 2,11
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponentTest,testJsonSerialisation,Long Statement,The length of the statement "assertEquals(WHITE + "Test string with " + WHITE+ "a"+ WHITE+ " placeholder"`BaseComponent.toLegacyText(baseComponents));" is 121.,19
+BungeeCord1,net.md_5.bungee.api.chat,TranslatableComponentTest,testTranslateComponent,Long Statement,The length of the statement "assertEquals(WHITE + "Given " + AQUA+ "Golden Sword"+ WHITE+ " * "+ WHITE+ "5"+ WHITE+ " to "+ WHITE+ "thinkofdeath"`translatableComponent.toLegacyText());" is 155.,30
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,deserialize,Long Statement,The length of the statement "return new Entity((value.has("type")) ? value.get("type").getAsString() : null`idString`(value.has("name")) ? context.deserialize(value.get("name")`BaseComponent.class) : null);" is 177.,17
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Long Statement,The length of the statement "return new UUID((long)array[0] << 32 | (long)array[1] & 0XFFFFFFFFL`(long)array[2] << 32 | (long)array[3] & 0XFFFFFFFFL);" is 121.,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 32,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 0XFFFFFFFFL,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 2,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 32,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 3,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,EntitySerializer,parseUUID,Magic Number,The method contains a magic number: 0XFFFFFFFFL,52
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,ItemSerializer,deserialize,Complex Conditional,The conditional expression last == 'b' || last == 's' || last == 'l' || last == 'f' || last == 'd' is complex.,17
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,ItemSerializer,deserialize,Long Statement,The length of the statement "return new Item((value.has("id")) ? value.get("id").getAsString() : null`count`(value.has("tag")) ? context.deserialize(value.get("tag")`ItemTag.class) : null);" is 160.,17
+BungeeCord1,net.md_5.bungee.api.chat.hover.content,Text,equals,Long Statement,The length of the statement "return o instanceof Text && ((Text)o).value instanceof BaseComponent[] && Arrays.equals((BaseComponent[])value`(BaseComponent[])((Text)o).value);" is 145.,46
+BungeeCord1,net.md_5.bungee.chat,BaseComponentSerializer,deserialize,Complex Method,Cyclomatic complexity of the method is 10,22
+BungeeCord1,net.md_5.bungee.chat,BaseComponentSerializer,deserialize,Long Statement,The length of the statement "component.setClickEvent(new ClickEvent(ClickEvent.Action.valueOf(clickEvent.get("action").getAsString().toUpperCase(Locale.ROOT))`(clickEvent.has("value")) ? clickEvent.get("value").getAsString() : ""));" is 203.,22
+BungeeCord1,net.md_5.bungee.chat,BaseComponentSerializer,serialize,Complex Method,Cyclomatic complexity of the method is 8,97
+BungeeCord1,net.md_5.bungee.chat,BaseComponentSerializer,serialize,Long Statement,The length of the statement "hoverEvent.add("contents"`context.serialize((component.getHoverEvent().getContents().size() == 1) ? component.getHoverEvent().getContents().get(0) : component.getHoverEvent().getContents()));" is 191.,97
+BungeeCord1,net.md_5.bungee.chat,ComponentStyleSerializer,serializeTo,Complex Method,Cyclomatic complexity of the method is 8,44
+BungeeCord1,net.md_5.bungee.chat,ComponentStyleSerializer,deserialize,Complex Method,Cyclomatic complexity of the method is 9,76
+BungeeCord1,net.md_5.bungee.config,Configuration,getSection,Long Statement,The length of the statement "return (Configuration)get(path`(def instanceof Configuration) ? def : new Configuration((defaults == null) ? null : defaults.getSection(path)));" is 144.,133
+BungeeCord1,net.md_5.bungee.config,CompoundConfigurationTest,data,Long Statement,The length of the statement "return Stream.of(Arguments.of(YamlConfiguration.class`"" + "receipt: Oz-Ware Purchase Invoice\n" + "date: 2012-08-06\n"+ "customer:\n"+ " given: Dorothy\n"+ " family: Gale\n"+ "\n"+ "items:\n"+ " - part_no: A4786\n"+ " descrip: Water Bucket (Filled)\n"+ " price: 1.47\n"+ " quantity: 4\n"+ "\n"+ " - part_no: E1628\n"+ " descrip: High Heeled \"Ruby\" Slippers\n"+ " size: 8\n"+ " price: 100.27\n"+ " quantity: 1\n"+ "\n"+ "bill-to: &id001\n"+ " street: |\n"+ " 123 Tornado Alley\n"+ " Suite 16\n"+ " city: East Centerville\n"+ " state: KS\n"+ "\n"+ "ship-to: *id001\n"+ "\n"+ "specialDelivery: >\n"+ " Follow the Yellow Brick\n"+ " Road to the Emerald City.\n"+ " Pay no attention to the\n"+ " man behind the curtain."`"" + "someKey:\n" + " 1: 1\n"+ " 2: 2\n"+ " 3: 3\n"+ " 4: 4"`"" + "null:\n" + " null: object\n"+ " object: null\n")`Arguments.of(JsonConfiguration.class`"" + "{\n" + " \"customer\": {\n"+ " \"given\": \"Dorothy\"` \n"+ " \"family\": \"Gale\"\n"+ " }` \n"+ " \"ship-to\": {\n"+ " \"city\": \"East Centerville\"` \n"+ " \"state\": \"KS\"` \n"+ " \"street\": \"123 Tornado Alley\\nSuite 16\\n\"\n"+ " }` \n"+ " \"bill-to\": {\n"+ " \"city\": \"East Centerville\"` \n"+ " \"state\": \"KS\"` \n"+ " \"street\": \"123 Tornado Alley\\nSuite 16\\n\"\n"+ " }` \n"+ " \"date\": \"2012-08-06\"` \n"+ " \"items\": [\n"+ " {\n"+ " \"part_no\": \"A4786\"` \n"+ " \"price\": 1.47` \n"+ " \"descrip\": \"Water Bucket (Filled)\"` \n"+ " \"quantity\": 4\n"+ " }` \n"+ " {\n"+ " \"part_no\": \"E1628\"` \n"+ " \"descrip\": \"High Heeled \\\"Ruby\\\" Slippers\"` \n"+ " \"price\": 100.27` \n"+ " \"quantity\": 1` \n"+ " \"size\": 8\n"+ " }\n"+ " ]` \n"+ " \"receipt\": \"Oz-Ware Purchase Invoice\"` \n"+ " \"specialDelivery\": \"Follow the Yellow Brick Road to the Emerald City. Pay no attention to the man behind the curtain.\"\n"+ "}"`"" + "{\n" + " \"someKey\": {\n"+ " \"1\": 1` \n"+ " \"2\": 2` \n"+ " \"3\": 3` \n"+ " \"4\": 4\n"+ " }\n"+ "}"`"" + "{\n" + " \"null\": {\n"+ " \"null\": \"object\"` \n"+ " \"object\": null\n"+ " }\n"+ "}"));" is 2045.,19
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 10,9
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 11,9
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 12,9
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 10,9
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 11,9
+BungeeCord1,net.md_5.bungee.config,DefaultConfigurationTest,testDefaultValues,Magic Number,The method contains a magic number: 12,9
+BungeeCord1,net.md_5.bungee.event,EventBus,post,Long Statement,The length of the statement "logger.log(Level.WARNING`MessageFormat.format("Error dispatching event {0} to listener {1}"`event`method.getListener())`ex.getCause());" is 135.,37
+BungeeCord1,net.md_5.bungee.event,EventBus,post,Long Statement,The length of the statement "logger.log(Level.WARNING`"Plugin listener {0} took {1}ms to process event {2}!"`new Object[]{method.getListener().getClass().getName()`elapsed / 1000000`event});" is 161.,37
+BungeeCord1,net.md_5.bungee.event,EventBus,post,Magic Number,The method contains a magic number: 50000000,37
+BungeeCord1,net.md_5.bungee.event,EventBus,post,Magic Number,The method contains a magic number: 1000000,37
+BungeeCord1,net.md_5.bungee.event,EventBus,findHandlers,Long Statement,The length of the statement "Set<Method> methods=ImmutableSet.<Method>builder().add(listener.getClass().getMethods()).add(listener.getClass().getDeclaredMethods()).build();" is 143.,73
+BungeeCord1,net.md_5.bungee.event,EventBus,findHandlers,Long Statement,The length of the statement "logger.log(Level.INFO`"Method {0} in class {1} annotated with {2} does not have single argument"`new Object[]{m`listener.getClass()`annotation});" is 145.,73
+BungeeCord1,net.md_5.bungee.event,EventBus,bakeHandlers,Magic Number,The method contains a magic number: 2,157
+BungeeCord1,net.md_5.bungee.event,EventPriorityTest,onMinPriority,Magic Number,The method contains a magic number: 7,22
+BungeeCord1,net.md_5.bungee.event,EventPriorityTest,onLowestPriority,Magic Number,The method contains a magic number: 6,29
+BungeeCord1,net.md_5.bungee.event,EventPriorityTest,onNormalPriority,Magic Number,The method contains a magic number: 4,36
+BungeeCord1,net.md_5.bungee.event,EventPriorityTest,onHighestPriority,Magic Number,The method contains a magic number: 2,43
+BungeeCord1,net.md_5.bungee.log,BungeeLogger,BungeeLogger,Magic Number,The method contains a magic number: 24,17
+BungeeCord1,net.md_5.bungee.log,BungeeLogger,BungeeLogger,Magic Number,The method contains a magic number: 8,17
+BungeeCord1,net.md_5.bungee.log,ColouredWriter,print,Empty catch clause,The method has an empty catch block.,62
+BungeeCord1,net.md_5.bungee.log,ColouredWriter,print,Long Statement,The length of the statement "console.print(Ansi.ansi().eraseLine(Erase.ALL).toString() + ConsoleReader.RESET_LINE + s+ Ansi.ansi().reset().toString());" is 122.,62
+BungeeCord1,net.md_5.bungee.module.cmd.alert,CommandAlert,execute,Magic Number,The method contains a magic number: 2,18
+BungeeCord1,net.md_5.bungee.module.cmd.alert,CommandAlertRaw,execute,Long Statement,The length of the statement "sender.sendMessage(new ComponentBuilder(ProxyServer.getInstance().getTranslation("error_occurred_player")).event(new HoverEvent(HoverEvent.Action.SHOW_TEXT`new ComponentBuilder(error.getMessage()).color(ChatColor.RED).create())).create());" is 239.,21
+BungeeCord1,net.md_5.bungee.module.cmd.find,CommandFind,execute,Long Statement,The length of the statement "ComponentBuilder componentBuilder=new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("user_online_at"`player.getName()`server.getName()));" is 164.,21
+BungeeCord1,net.md_5.bungee.module.cmd.find,CommandFind,execute,Long Statement,The length of the statement "componentBuilder.event(new HoverEvent(HoverEvent.Action.SHOW_TEXT`new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("click_to_connect")).create()));" is 175.,21
+BungeeCord1,net.md_5.bungee.module.cmd.list,CommandList,execute,Long Statement,The length of the statement "BaseComponent baseComponent=new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("command_list"`server.getName()`players.size()`String.join(ChatColor.RESET + "` "`players))).build();" is 206.,31
+BungeeCord1,net.md_5.bungee.module.cmd.list,CommandList,execute,Long Statement,The length of the statement "baseComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT`new Text(new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("click_to_connect")).create())));" is 190.,31
+BungeeCord1,net.md_5.bungee.module.cmd.list,CommandList,execute,Long Statement,The length of the statement "sender.sendMessage(ProxyServer.getInstance().getTranslation("total_players"`ProxyServer.getInstance().getOnlineCount()));" is 121.,31
+BungeeCord1,net.md_5.bungee.module.cmd.send,CommandSend,execute,Complex Method,Cyclomatic complexity of the method is 9,99
+BungeeCord1,net.md_5.bungee.module.cmd.send,CommandSend,execute,Long Statement,The length of the statement "ServerConnectRequest request=ServerConnectRequest.builder().target(server).reason(ServerConnectEvent.Reason.COMMAND).callback(new SendCallback.Entry(callback`player`server)).build();" is 182.,99
+BungeeCord1,net.md_5.bungee.module.cmd.send,CommandSend,execute,Magic Number,The method contains a magic number: 2,99
+BungeeCord1,net.md_5.bungee.module.cmd.send,CommandSend,onTabComplete,Complex Method,Cyclomatic complexity of the method is 9,160
+BungeeCord1,net.md_5.bungee.module.cmd.send,CommandSend,onTabComplete,Magic Number,The method contains a magic number: 2,160
+BungeeCord1,net.md_5.bungee.module.cmd.server,CommandServer,execute,Complex Method,Cyclomatic complexity of the method is 8,32
+BungeeCord1,net.md_5.bungee.module.cmd.server,CommandServer,execute,Long Statement,The length of the statement "sender.sendMessage(ProxyServer.getInstance().getTranslation("current_server"`((ProxiedPlayer)sender).getServer().getInfo().getName()));" is 135.,32
+BungeeCord1,net.md_5.bungee.module.cmd.server,CommandServer,execute,Long Statement,The length of the statement "ComponentBuilder serverList=new ComponentBuilder().appendLegacy(ProxyServer.getInstance().getTranslation("server_list"));" is 121.,32
+BungeeCord1,net.md_5.bungee.module.cmd.server,CommandServer,execute,Long Statement,The length of the statement "serverTextComponent.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT`new ComponentBuilder(count + (count == 1 ? " player" : " players") + "\n").appendLegacy(ProxyServer.getInstance().getTranslation("click_to_connect")).create()));" is 238.,32
+BungeeCord1,net.md_5.bungee.module.cmd.server,CommandServer,onTabComplete,Long Statement,The length of the statement "return (args.length > 1) ? Collections.EMPTY_LIST : Iterables.transform(Iterables.filter(ProxyServer.getInstance().getServers().values()`new Predicate<ServerInfo>(){" is 165.,83
+BungeeCord1,net.md_5.bungee.module.reconnect.yaml,YamlReconnectHandler,YamlReconnectHandler,Abstract Function Call From Constructor,The constructor YamlReconnectHandler calls a virtual method getLogger.,29
+BungeeCord1,net.md_5.bungee.module.reconnect.yaml,YamlReconnectHandler,setServer,Long Statement,The length of the statement "data.put(key(player)`(player.getReconnectServer() != null) ? player.getReconnectServer().getName() : player.getServer().getInfo().getName());" is 141.,70
+BungeeCord1,net.md_5.bungee.jni.cipher,NativeCipher,init,Magic Number,The method contains a magic number: 16,18
+BungeeCord1,net.md_5.bungee.jni,NativeCode,load,Empty catch clause,The method has an empty catch block.,33
+BungeeCord1,net.md_5.bungee.jni,NativeCode,load,Empty catch clause,The method has an empty catch block.,33
+BungeeCord1,net.md_5.bungee.jni.zlib,NativeCompressImpl,process,Long Parameter List,The method has 6 parameters. ,24
+BungeeCord1,net.md_5.bungee.jni.zlib,NativeZlib,process,Long Statement,The length of the statement "processed=nativeCompress.process(ctx`in.memoryAddress() + in.readerIndex()`in.readableBytes()`out.memoryAddress() + out.writerIndex()`out.writableBytes()`compress);" is 164.,40
+BungeeCord1,net.md_5.bungee.jni.zlib,NativeZlib,process,Magic Number,The method contains a magic number: 8192,40
+BungeeCord1,net.md_5.bungee.protocol,ChatChain,readLinks,Magic Number,The method contains a magic number: 5,33
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeString,Magic Number,The method contains a magic number: 3,55
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeString,Magic Number,The method contains a magic number: 3,55
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readString,Magic Number,The method contains a magic number: 3,77
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readString,Magic Number,The method contains a magic number: 3,77
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarInt,Magic Number,The method contains a magic number: 5,233
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarInt,Magic Number,The method contains a magic number: 0x7F,238
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarInt,Magic Number,The method contains a magic number: 7,238
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarInt,Magic Number,The method contains a magic number: 0x80,238
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarInt,Magic Number,The method contains a magic number: 0x80,238
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarInt,Magic Number,The method contains a magic number: 0x7F,263
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarInt,Magic Number,The method contains a magic number: 7,263
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarInt,Magic Number,The method contains a magic number: 0x80,263
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarShort,Magic Number,The method contains a magic number: 0x8000,285
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarShort,Magic Number,The method contains a magic number: 0x7FFF,285
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarShort,Magic Number,The method contains a magic number: 0xFF,285
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readVarShort,Magic Number,The method contains a magic number: 15,285
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarShort,Magic Number,The method contains a magic number: 0x7FFF,297
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarShort,Magic Number,The method contains a magic number: 0x7F8000,297
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarShort,Magic Number,The method contains a magic number: 15,297
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeVarShort,Magic Number,The method contains a magic number: 0x8000,297
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readPublicKey,Magic Number,The method contains a magic number: 512,380
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readPublicKey,Magic Number,The method contains a magic number: 4096,380
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readNumberFormat,Magic Number,The method contains a magic number: 2,406
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readNumberFormat,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@34808e2,406
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readFixedBitSet,Magic Number,The method contains a magic number: 8,500
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,readFixedBitSet,Magic Number,The method contains a magic number: 3,500
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeFixedBitSet,Magic Number,The method contains a magic number: 8,508
+BungeeCord1,net.md_5.bungee.protocol,DefinedPacket,writeFixedBitSet,Magic Number,The method contains a magic number: 3,508
+BungeeCord1,net.md_5.bungee.protocol,KickStringWriter,encode,Magic Number,The method contains a magic number: 0xFF,12
+BungeeCord1,net.md_5.bungee.protocol,LegacyDecoder,decode,Long Statement,The length of the statement "out.add(new PacketWrapper(new LegacyPing(in.isReadable() && in.readUnsignedByte() == 0x01)`Unpooled.EMPTY_BUFFER`Protocol.STATUS));" is 131.,14
+BungeeCord1,net.md_5.bungee.protocol,LegacyDecoder,decode,Magic Number,The method contains a magic number: 0xFE,14
+BungeeCord1,net.md_5.bungee.protocol,LegacyDecoder,decode,Magic Number,The method contains a magic number: 0x02,14
+BungeeCord1,net.md_5.bungee.protocol,MinecraftDecoder,decode,Long Statement,The length of the statement "throw new BadPacketException("Packet " + protocol + ":"+ prot.getDirection()+ "/"+ packetId+ " ("+ packet.getClass().getSimpleName()+ ") larger than expected` extra bytes: "+ in.readableBytes());" is 195.,22
+BungeeCord1,net.md_5.bungee.protocol,SeenMessages,read,Magic Number,The method contains a magic number: 20,20
+BungeeCord1,net.md_5.bungee.protocol,SeenMessages,write,Magic Number,The method contains a magic number: 20,27
+BungeeCord1,net.md_5.bungee.protocol,TagUtil,fromJson,Complex Method,Cyclomatic complexity of the method is 24,34
+BungeeCord1,net.md_5.bungee.protocol,TagUtil,fromJson,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@321f855a,34
+BungeeCord1,net.md_5.bungee.protocol,TagUtil,toJson,Complex Method,Cyclomatic complexity of the method is 21,150
+BungeeCord1,net.md_5.bungee.protocol,TagUtil,toJson,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@21e9547b,150
+BungeeCord1,net.md_5.bungee.protocol,Varint21FrameDecoder,decode,Complex Method,Cyclomatic complexity of the method is 9,15
+BungeeCord1,net.md_5.bungee.protocol,Varint21FrameDecoder,decode,Magic Number,The method contains a magic number: 3,15
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 0xFFFFFF80,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 0xFFFFC000,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 2,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 0xFFE00000,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 3,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 0xF0000000,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 4,27
+BungeeCord1,net.md_5.bungee.protocol,Varint21LengthFieldPrepender,varintSize,Magic Number,The method contains a magic number: 5,27
+BungeeCord1,net.md_5.bungee.protocol,TagUtilTest,testStringLiteral,Long Statement,The length of the statement "testDissembleReassemble("{\"text\":\"\"`\"extra\":[\"hello\"`{\"text\":\"there\"`\"color\":\"#ff0000\"}`{\"text\":\"friend\"`\"font\":\"minecraft:default\"}]}");" is 161.,24
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,read,Magic Number,The method contains a magic number: 2,33
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,read,Magic Number,The method contains a magic number: 3,33
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,read,Magic Number,The method contains a magic number: 4,33
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,read,Magic Number,The method contains a magic number: 5,33
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,write,Magic Number,The method contains a magic number: 2,69
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,write,Magic Number,The method contains a magic number: 3,69
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,write,Magic Number,The method contains a magic number: 4,69
+BungeeCord1,net.md_5.bungee.protocol.packet,BossBar,write,Magic Number,The method contains a magic number: 5,69
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,read,Long Statement,The length of the statement "message=readString(buf`(direction == ProtocolConstants.Direction.TO_CLIENT) ? 262144 : (protocolVersion >= ProtocolConstants.MINECRAFT_1_11 ? 256 : 100));" is 154.,40
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,read,Magic Number,The method contains a magic number: 262144,40
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,read,Magic Number,The method contains a magic number: 256,40
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,read,Magic Number,The method contains a magic number: 100,40
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,write,Long Statement,The length of the statement "writeString(message`buf`(direction == ProtocolConstants.Direction.TO_CLIENT) ? 262144 : (protocolVersion >= ProtocolConstants.MINECRAFT_1_11 ? 256 : 100));" is 155.,54
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,write,Magic Number,The method contains a magic number: 262144,54
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,write,Magic Number,The method contains a magic number: 256,54
+BungeeCord1,net.md_5.bungee.protocol.packet,Chat,write,Magic Number,The method contains a magic number: 100,54
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientChat,read,Magic Number,The method contains a magic number: 256,29
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientChat,read,Magic Number,The method contains a magic number: 256,29
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientCommand,read,Magic Number,The method contains a magic number: 256,32
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientCommand,read,Magic Number,The method contains a magic number: 8,32
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientCommand,read,Magic Number,The method contains a magic number: 16,32
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientCommand,read,Magic Number,The method contains a magic number: 256,32
+BungeeCord1,net.md_5.bungee.protocol.packet,ClientSettings,read,Magic Number,The method contains a magic number: 16,29
+BungeeCord1,net.md_5.bungee.protocol.packet,Commands,read,Complex Method,Cyclomatic complexity of the method is 10,59
+BungeeCord1,net.md_5.bungee.protocol.packet,Commands,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7748a1ea,59
+BungeeCord1,net.md_5.bungee.protocol.packet,Commands,write,Complex Method,Cyclomatic complexity of the method is 16,127
+BungeeCord1,net.md_5.bungee.protocol.packet,Commands,binaryFlag,Magic Number,The method contains a magic number: 0x2,1021
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,read,Magic Number,The method contains a magic number: 32,24
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,read,Magic Number,The method contains a magic number: 128,24
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,read,Magic Number,The method contains a magic number: 4096,24
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,write,Magic Number,The method contains a magic number: 32,37
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,write,Magic Number,The method contains a magic number: 128,37
+BungeeCord1,net.md_5.bungee.protocol.packet,DisconnectReportDetails,write,Magic Number,The method contains a magic number: 4096,37
+BungeeCord1,net.md_5.bungee.protocol.packet,EncryptionResponse,read,Complex Conditional,The conditional expression protocolVersion < ProtocolConstants.MINECRAFT_1_19 || protocolVersion >= ProtocolConstants.MINECRAFT_1_19_3 || buf.readBoolean() is complex.,23
+BungeeCord1,net.md_5.bungee.protocol.packet,EncryptionResponse,read,Long Statement,The length of the statement "if (protocolVersion < ProtocolConstants.MINECRAFT_1_19 || protocolVersion >= ProtocolConstants.MINECRAFT_1_19_3 || buf.readBoolean()) {" is 135.,23
+BungeeCord1,net.md_5.bungee.protocol.packet,EncryptionResponse,read,Magic Number,The method contains a magic number: 128,23
+BungeeCord1,net.md_5.bungee.protocol.packet,EncryptionResponse,read,Magic Number,The method contains a magic number: 128,23
+BungeeCord1,net.md_5.bungee.protocol.packet,Handshake,read,Magic Number,The method contains a magic number: 255,23
+BungeeCord1,net.md_5.bungee.protocol.packet,Login,read,Complex Method,Cyclomatic complexity of the method is 27,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Login,read,Magic Number,The method contains a magic number: 29,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Login,write,Complex Method,Cyclomatic complexity of the method is 23,171
+BungeeCord1,net.md_5.bungee.protocol.packet,Login,write,Magic Number,The method contains a magic number: 29,171
+BungeeCord1,net.md_5.bungee.protocol.packet,LoginPayloadRequest,read,Magic Number,The method contains a magic number: 1048576,23
+BungeeCord1,net.md_5.bungee.protocol.packet,LoginPayloadResponse,read,Magic Number,The method contains a magic number: 1048576,22
+BungeeCord1,net.md_5.bungee.protocol.packet,LoginRequest,read,Magic Number,The method contains a magic number: 16,25
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItem,read,Complex Method,Cyclomatic complexity of the method is 9,24
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItem,write,Complex Method,Cyclomatic complexity of the method is 9,64
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItemUpdate,read,Complex Method,Cyclomatic complexity of the method is 11,23
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItemUpdate,read,Magic Number,The method contains a magic number: 512,23
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItemUpdate,read,Magic Number,The method contains a magic number: 4096,23
+BungeeCord1,net.md_5.bungee.protocol.packet,PlayerListItemUpdate,write,Complex Method,Cyclomatic complexity of the method is 11,69
+BungeeCord1,net.md_5.bungee.protocol.packet,PluginMessage,read,Magic Number,The method contains a magic number: 20,59
+BungeeCord1,net.md_5.bungee.protocol.packet,PluginMessage,read,Magic Number,The method contains a magic number: 0x100000,59
+BungeeCord1,net.md_5.bungee.protocol.packet,Respawn,read,Complex Method,Cyclomatic complexity of the method is 12,34
+BungeeCord1,net.md_5.bungee.protocol.packet,Respawn,write,Complex Method,Cyclomatic complexity of the method is 12,93
+BungeeCord1,net.md_5.bungee.protocol.packet,ScoreboardObjective,read,Magic Number,The method contains a magic number: 2,32
+BungeeCord1,net.md_5.bungee.protocol.packet,ScoreboardObjective,write,Magic Number,The method contains a magic number: 2,55
+BungeeCord1,net.md_5.bungee.protocol.packet,ServerData,write,Complex Method,Cyclomatic complexity of the method is 8,54
+BungeeCord1,net.md_5.bungee.protocol.packet,StoreCookie,read,Magic Number,The method contains a magic number: 5120,22
+BungeeCord1,net.md_5.bungee.protocol.packet,SystemChat,read,Long Statement,The length of the statement "position=(protocolVersion >= ProtocolConstants.MINECRAFT_1_19_1) ? ((buf.readBoolean()) ? ChatMessageType.ACTION_BAR.ordinal() : 0) : readVarInt(buf);" is 150.,24
+BungeeCord1,net.md_5.bungee.protocol.packet,SystemChat,read,Magic Number,The method contains a magic number: 262144,24
+BungeeCord1,net.md_5.bungee.protocol.packet,TabCompleteRequest,read,Long Statement,The length of the statement "cursor=readString(buf`(protocolVersion > ProtocolConstants.MINECRAFT_1_13 ? 32500 : (protocolVersion == ProtocolConstants.MINECRAFT_1_13 ? 256 : 32767)));" is 154.,37
+BungeeCord1,net.md_5.bungee.protocol.packet,TabCompleteRequest,read,Magic Number,The method contains a magic number: 32500,37
+BungeeCord1,net.md_5.bungee.protocol.packet,TabCompleteRequest,read,Magic Number,The method contains a magic number: 256,37
+BungeeCord1,net.md_5.bungee.protocol.packet,TabCompleteRequest,read,Magic Number,The method contains a magic number: 32767,37
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,read,Complex Conditional,The conditional expression mode == 0 || mode == 3 || mode == 4 is complex.,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,read,Magic Number,The method contains a magic number: 2,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,read,Magic Number,The method contains a magic number: 3,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,read,Magic Number,The method contains a magic number: 4,46
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,write,Complex Conditional,The conditional expression mode == 0 || mode == 3 || mode == 4 is complex.,86
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,write,Magic Number,The method contains a magic number: 2,86
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,write,Magic Number,The method contains a magic number: 3,86
+BungeeCord1,net.md_5.bungee.protocol.packet,Team,write,Magic Number,The method contains a magic number: 4,86
+BungeeCord1,net.md_5.bungee.protocol.packet,Title,read,Magic Number,The method contains a magic number: 2,33
+BungeeCord1,net.md_5.bungee.protocol.packet,Title,write,Magic Number,The method contains a magic number: 2,66
+BungeeCord1,net.md_5.bungee.protocol.packet,UnsignedClientCommand,read,Magic Number,The method contains a magic number: 256,21
+BungeeCord1,net.md_5.bungee.conf,Configuration,load,Complex Method,Cyclomatic complexity of the method is 10,73
+BungeeCord1,net.md_5.bungee.conf,Configuration,load,Long Statement,The length of the statement "disabledCommands=new CaseInsensitiveSet((Collection<String>)adapter.getList("disabled_commands"`Arrays.asList("disabledcommandhere")));" is 135.,73
+BungeeCord1,net.md_5.bungee.conf,Configuration,load,Long Statement,The length of the statement "Preconditions.checkArgument(newServers.containsKey(oldServer.getName())`"Server %s removed on reload!"`oldServer.getName());" is 124.,73
+BungeeCord1,net.md_5.bungee.conf,YamlConfig,load,Long Statement,The length of the statement "throw new RuntimeException("Invalid configuration encountered - this is a configuration error and NOT a bug! Please attempt to fix the error or see https://www.spigotmc.org/ for help."`ex);" is 189.,59
+BungeeCord1,net.md_5.bungee.conf,YamlConfig,load,Long Statement,The length of the statement "set("permissions.admin"`Arrays.asList(new String[]{"bungeecord.command.alert"`"bungeecord.command.end"`"bungeecord.command.ip"`"bungeecord.command.reload"`"bungeecord.command.kick"}));" is 184.,59
+BungeeCord1,net.md_5.bungee.conf,YamlConfig,getListeners,Long Statement,The length of the statement "ListenerInfo info=new ListenerInfo(address`motd`maxPlayers`tabListSize`serverPriority`forceDefault`forced`value.toString()`setLocalAddress`pingPassthrough`queryPort`query`proxyProtocol);" is 186.,229
+BungeeCord1,net.md_5.bungee.conf,YamlConfig,getListeners,Magic Number,The method contains a magic number: 60,229
+BungeeCord1,net.md_5.bungee.conf,YamlConfig,getListeners,Magic Number,The method contains a magic number: 25577,229
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "rewrite.rewriteClientbound(packet.buf`con.getServerEntityId()`con.getClientEntityId()`con.getPendingConnection().getVersion());" is 127.,150
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Magic Number,The method contains a magic number: 50,161
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Magic Number,The method contains a magic number: 2,192
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3484b8f9,192
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7a7fce66,217
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Complex Method,Cyclomatic complexity of the method is 9,256
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Magic Number,The method contains a magic number: 2,256
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Magic Number,The method contains a magic number: 3,256
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Magic Number,The method contains a magic number: 4,256
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Complex Method,Cyclomatic complexity of the method is 54,306
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@115e07de,306
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "ServerKickEvent event=bungee.getPluginManager().callEvent(new ServerKickEvent(con`server.getInfo()`new BaseComponent[]{kick.getMessage()}`def`ServerKickEvent.State.CONNECTED));" is 176.,644
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "return lowerCase.startsWith(commandName) && entry.getValue().hasPermission(con) && !bungee.getDisabledCommands().contains(lowerCase);" is 133.,669
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "tabCompleteResponse.setSuggestions(new Suggestions(range`Lists.transform(tabCompleteResponseEvent.getSuggestions()`new Function<String`Suggestion>(){" is 149.,669
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Complex Conditional,The conditional expression !bungee.getDisabledCommands().contains(command.getKey()) && commands.getRoot().getChild(command.getKey()) == null && command.getValue().hasPermission(con) is complex.,755
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "if (!bungee.getDisabledCommands().contains(command.getKey()) && commands.getRoot().getChild(command.getKey()) == null && command.getValue().hasPermission(con)) {" is 161.,755
+BungeeCord1,net.md_5.bungee.connection,DownstreamBridge,handle,Long Statement,The length of the statement "CommandNode dummy=LiteralArgumentBuilder.literal(command.getKey()).executes(DUMMY_COMMAND).then(RequiredArgumentBuilder.argument("args"`StringArgumentType.greedyString()).suggests(Commands.SuggestionRegistry.ASK_SERVER).executes(DUMMY_COMMAND)).build();" is 253.,755
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 16,175
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "kickMessage=ChatColor.DARK_BLUE + "\00" + 127+ '\00'+ legacy.getVersion().getName()+ '\00'+ getFirstLine(legacy.getDescription())+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 289.,197
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "kickMessage=ChatColor.stripColor(getFirstLine(legacy.getDescription())) + '\u00a7' + ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\u00a7'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 239.,197
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 127,197
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Long Statement,The length of the statement "kickMessage=ChatColor.DARK_BLUE + "\00" + 127+ '\00'+ legacy.getVersion().getName()+ '\00'+ getFirstLine(legacy.getDescription())+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 289.,209
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Long Statement,The length of the statement "kickMessage=ChatColor.stripColor(getFirstLine(legacy.getDescription())) + '\u00a7' + ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\u00a7'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 239.,209
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Magic Number,The method contains a magic number: 127,209
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Long Statement,The length of the statement "kickMessage=ChatColor.DARK_BLUE + "\00" + 127+ '\00'+ legacy.getVersion().getName()+ '\00'+ getFirstLine(legacy.getDescription())+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\00'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 289.,220
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Long Statement,The length of the statement "kickMessage=ChatColor.stripColor(getFirstLine(legacy.getDescription())) + '\u00a7' + ((legacy.getPlayers() != null) ? legacy.getPlayers().getOnline() : "-1")+ '\u00a7'+ ((legacy.getPlayers() != null) ? legacy.getPlayers().getMax() : "-1");" is 239.,220
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Magic Number,The method contains a magic number: 127,220
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,getPingInfo,Long Statement,The length of the statement "return new ServerPing(new ServerPing.Protocol(bungee.getName() + " " + bungee.getGameVersion()`protocol)`new ServerPing.Players(listener.getMaxPlayers()`bungee.getOnlineCount()`null)`motd`BungeeCord.getInstance().config.getFaviconObject());" is 240.,270
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "final int protocol=(ProtocolConstants.SUPPORTED_VERSION_IDS.contains(handshake.getProtocolVersion())) ? handshake.getProtocolVersion() : bungee.getProtocolVersion();" is 165.,279
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Complex Method,Cyclomatic complexity of the method is 11,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 2,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 2,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 3,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 3,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@232bb3ee,336
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Complex Method,Cyclomatic complexity of the method is 12,414
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "Preconditions.checkState(EncryptionUtil.check(loginRequest.getPublicKey()`encryptResponse`request)`"Invalid verification");" is 123.,499
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "for ( byte[] bit : new byte[][]{request.getServerId().getBytes("ISO_8859_1")`sharedKey.getEncoded()`EncryptionUtil.keys.getPublic().getEncoded()}) {" is 148.,499
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "String preventProxy=(BungeeCord.getInstance().config.isPreventProxyConnections() && getSocketAddress() instanceof InetSocketAddress) ? "&ip=" + URLEncoder.encode(getAddress().getAddress().getHostAddress()`"UTF-8") : "";" is 219.,499
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Long Statement,The length of the statement "String authURL="https://sessionserver.mojang.com/session/minecraft/hasJoined?username=" + encName + "&serverId="+ encodedHash+ preventProxy;" is 140.,499
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,handle,Magic Number,The method contains a magic number: 16,499
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,finish,Complex Method,Cyclomatic complexity of the method is 13,554
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,finish,Empty catch clause,The method has an empty catch block.,554
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,finish,Long Statement,The length of the statement "unsafe.sendPacket(new LoginSuccess(getRewriteId()`getName()`(loginProfile == null) ? null : loginProfile.getProperties()));" is 123.,554
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,done,Long Statement,The length of the statement "unsafe.sendPacket(new LoginSuccess(getRewriteId()`getName()`(loginProfile == null) ? null : loginProfile.getProperties()));" is 123.,615
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,run,Long Statement,The length of the statement "unsafe.sendPacket(new LoginSuccess(getRewriteId()`getName()`(loginProfile == null) ? null : loginProfile.getProperties()));" is 123.,631
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,relayMessage,Magic Number,The method contains a magic number: 128,837
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,relayMessage,Magic Number,The method contains a magic number: 128,837
+BungeeCord1,net.md_5.bungee.connection,InitialHandler,retrieveCookie,Long Statement,The length of the statement "Preconditions.checkState(getVersion() >= ProtocolConstants.MINECRAFT_1_20_5`"Cookies are only supported in 1.20.5 and above");" is 126.,864
+BungeeCord1,net.md_5.bungee.connection,PingHandler,connected,Long Statement,The length of the statement "channel.getHandle().pipeline().addAfter(PipelineUtils.FRAME_DECODER`PipelineUtils.PACKET_DECODER`new MinecraftDecoder(Protocol.STATUS`false`ProxyServer.getInstance().getProtocolVersion()));" is 189.,34
+BungeeCord1,net.md_5.bungee.connection,PingHandler,handle,Magic Number,The method contains a magic number: 16,55
+BungeeCord1,net.md_5.bungee.connection,UpstreamBridge,UpstreamBridge,Abstract Function Call From Constructor,The constructor UpstreamBridge calls a virtual method onConnect.,54
+BungeeCord1,net.md_5.bungee.connection,UpstreamBridge,handle,Long Statement,The length of the statement "rewrite.rewriteServerbound(packet.buf`con.getClientEntityId()`con.getServerEntityId()`con.getPendingConnection().getVersion());" is 127.,136
+BungeeCord1,net.md_5.bungee.connection,UpstreamBridge,handle,Complex Method,Cyclomatic complexity of the method is 9,230
+BungeeCord1,net.md_5.bungee.connection,UpstreamBridge,handle,Complex Conditional,The conditional expression con.getServer() != null && !con.getServer().isForgeServer() && pluginMessage.getData().length > Short.MAX_VALUE is complex.,300
+BungeeCord1,net.md_5.bungee.connection,UpstreamBridge,handle,Long Statement,The length of the statement "PluginMessageEvent event=new PluginMessageEvent(con`con.getServer()`pluginMessage.getTag()`pluginMessage.getData().clone());" is 124.,300
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,getEntityMap,Complex Method,Cyclomatic complexity of the method is 41,28
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Complex Method,Cyclomatic complexity of the method is 38,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Long Parameter List,The method has 5 parameters. ,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 0xFF,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 5,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 15,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 3,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 23,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 14,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 16,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 32,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 3,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 20,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 11,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 16,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 27,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 6,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 2,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 4,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 3,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 4,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 5,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 6,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 7,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 12,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 8,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 9,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 8,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 10,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 11,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 16,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 12,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 13,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 15,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 16,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Magic Number,The method contains a magic number: 17,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@32f98402,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,rewriteMetaVarInt,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@367160c5,170
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap,readSkipSlot,Magic Number,The method contains a magic number: 3,315
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x2F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x31,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x34,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x3A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x40,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x48,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x49,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,EntityMap_1_10,Magic Number,The method contains a magic number: 0x14,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x3A,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x48,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x40,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x30,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x2C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 0x39,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 6,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteClientbound,Magic Number,The method contains a magic number: 13,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_10,rewriteServerbound,Magic Number,The method contains a magic number: 0x1B,158
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x2F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x31,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x34,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x3A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x40,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x48,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x49,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,EntityMap_1_11,Magic Number,The method contains a magic number: 0x14,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x3A,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x48,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x40,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x30,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x2C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 0x39,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 6,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 7,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteClientbound,Magic Number,The method contains a magic number: 13,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_11,rewriteServerbound,Magic Number,The method contains a magic number: 0x1B,159
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x2F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x32,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x35,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x38,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x3D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x3E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x42,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x4D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x4E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x0B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,EntityMap_1_12,Magic Number,The method contains a magic number: 0x15,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x3C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x4A,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x42,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x31,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x2C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 0x3B,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 6,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 7,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteClientbound,Magic Number,The method contains a magic number: 13,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12,rewriteServerbound,Magic Number,The method contains a magic number: 0x1E,159
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x30,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x33,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x3D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x3E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x3F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x43,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x4C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x4E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x4F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,EntityMap_1_12_1,Magic Number,The method contains a magic number: 0x15,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x3D,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x4B,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x43,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x32,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x2D,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 0x3C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 6,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 7,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteClientbound,Magic Number,The method contains a magic number: 13,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_12_1,rewriteServerbound,Magic Number,The method contains a magic number: 0x1E,159
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x1C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x29,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x2A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x33,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x3F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x40,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x41,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x42,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x46,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x4F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x50,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x52,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x53,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x0D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,EntityMap_1_13,Magic Number,The method contains a magic number: 0x19,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x40,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x4F,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x46,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x35,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x2F,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 0x3F,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 6,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 7,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteClientbound,Magic Number,The method contains a magic number: 13,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_13,rewriteServerbound,Magic Number,The method contains a magic number: 0x28,159
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x29,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x2A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x2B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x38,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x3E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x43,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x44,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x45,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x46,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x55,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x56,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x58,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x59,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x0E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,EntityMap_1_14,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Complex Conditional,The conditional expression type == 2 || type == 101 || type == 71 is complex.,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 21,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x44,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 4,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x55,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x4A,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x37,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 101,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 71,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 71,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 26,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x32,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x43,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 7,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 8,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 15,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteClientbound,Magic Number,The method contains a magic number: 0x50,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_14,rewriteServerbound,Magic Number,The method contains a magic number: 0x2B,163
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x09,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x1C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x29,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x2A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x2B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x2C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x3F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x44,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x45,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x46,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x47,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x56,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x57,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x59,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x5A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x0E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,EntityMap_1_15,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Complex Conditional,The conditional expression type == 2 || type == 102 || type == 72 is complex.,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 21,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x45,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 4,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x56,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x4B,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x38,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 102,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 72,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 72,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 26,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x33,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x44,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 7,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 8,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 16,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteClientbound,Magic Number,The method contains a magic number: 0x51,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_15,rewriteServerbound,Magic Number,The method contains a magic number: 0x2B,163
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x02,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x29,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x2A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x2B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x38,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x3E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x44,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x45,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x46,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x47,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x55,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x56,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x58,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x59,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x0E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,EntityMap_1_16,Magic Number,The method contains a magic number: 0x1C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Complex Conditional,The conditional expression type == 2 || type == 102 || type == 72 is complex.,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 21,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x45,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 4,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x55,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x4B,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x37,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 102,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 72,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 72,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 26,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x04,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x32,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 2,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x44,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 7,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 8,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 16,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteClientbound,Magic Number,The method contains a magic number: 0x50,48
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_16,rewriteServerbound,Magic Number,The method contains a magic number: 0x2C,163
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x10,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x11,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x12,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x14,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x15,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x16,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x17,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x18,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x19,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x1A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x1C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x1D,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x1E,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x20,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x2C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x43,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x49,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x02,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,EntityMap_1_8,Magic Number,The method contains a magic number: 0x0B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 19,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x0D,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x1B,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 4,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x13,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x0E,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 60,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 90,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 14,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 6,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 6,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 6,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x0C,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 0x42,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteClientbound,Magic Number,The method contains a magic number: 2,50
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_8,rewriteServerbound,Magic Number,The method contains a magic number: 0x18,152
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x2F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x31,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x34,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x3A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x40,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x49,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x4C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,EntityMap_1_9,Magic Number,The method contains a magic number: 0x14,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x3A,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x49,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x40,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x30,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x2C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 0x39,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 5,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteClientbound,Magic Number,The method contains a magic number: 12,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9,rewriteServerbound,Magic Number,The method contains a magic number: 0x1B,158
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x03,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x04,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x05,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x06,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x08,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x1B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x25,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x26,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x27,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x28,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x2F,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x31,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x34,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x36,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x39,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x3A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x3B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x3C,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x40,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x48,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x49,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x4A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x4B,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x0A,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,EntityMap_1_9_4,Magic Number,The method contains a magic number: 0x14,17
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Complex Conditional,The conditional expression type == 60 || type == 90 || type == 91 is complex.,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Complex Method,Cyclomatic complexity of the method is 20,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x3A,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 4,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x48,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x40,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x30,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 90,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 60,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 91,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 26,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x05,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x2C,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 2,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 0x39,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 5,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteClientbound,Magic Number,The method contains a magic number: 12,49
+BungeeCord1,net.md_5.bungee.entitymap,EntityMap_1_9_4,rewriteServerbound,Magic Number,The method contains a magic number: 0x1B,158
+BungeeCord1,net.md_5.bungee.forge,ForgeClientHandler,handle,Magic Number,The method contains a magic number: 128,48
+BungeeCord1,net.md_5.bungee.forge,ForgeClientHandler,setServerModList,Magic Number,The method contains a magic number: 2,100
+BungeeCord1,net.md_5.bungee.forge,ForgeClientHandler,setServerIdList,Magic Number,The method contains a magic number: 3,118
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,logServer,Long Statement,The length of the statement "String log="[" + stateName + " "+ dir+ "]["+ direction.name()+ ": "+ getNameFromDiscriminator(message.getTag()`message)+ "]";" is 125.,13
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,logClient,Long Statement,The length of the statement "String log="[" + stateName + " "+ dir+ "]["+ direction.name()+ ": "+ getNameFromDiscriminator(message.getTag()`message)+ "]";" is 125.,20
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Complex Method,Cyclomatic complexity of the method is 11,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Magic Number,The method contains a magic number: 2,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Magic Number,The method contains a magic number: 2,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Magic Number,The method contains a magic number: 3,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Magic Number,The method contains a magic number: 2,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@57f0f122,27
+BungeeCord1,net.md_5.bungee.forge,ForgeLogger,getNameFromDiscriminator,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@293a9cf1,27
+BungeeCord1,net.md_5.bungee.forge,ForgeServerHandler,handle,Long Statement,The length of the statement "if (!message.getTag().equalsIgnoreCase(ForgeConstants.FML_HANDSHAKE_TAG) && !message.getTag().equalsIgnoreCase(ForgeConstants.FORGE_REGISTER)) {" is 144.,35
+BungeeCord1,net.md_5.bungee.forge,ForgeUtils,readModList,Magic Number,The method contains a magic number: 2,31
+BungeeCord1,net.md_5.bungee.forge,ForgeUtils,readModList,Magic Number,The method contains a magic number: 2,31
+BungeeCord1,net.md_5.bungee.forge,ForgeUtils,getFmlBuildNumber,Magic Number,The method contains a magic number: 4,54
+BungeeCord1,net.md_5.bungee.forge,ForgeUtils,getFmlBuildNumber,Magic Number,The method contains a magic number: 4,54
+BungeeCord1,net.md_5.bungee.http,HttpClient,get,Magic Number,The method contains a magic number: 80,32
+BungeeCord1,net.md_5.bungee.http,HttpClient,get,Magic Number,The method contains a magic number: 443,32
+BungeeCord1,net.md_5.bungee.http,HttpClient,get,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@579dc440,32
+BungeeCord1,net.md_5.bungee.module,JenkinsModuleSource,retrieve,Long Statement,The length of the statement "URL website=new URL("https://ci.md-5.net/job/BungeeCord/" + version.getBuild() + "/artifact/module/"+ module.getName().replace('_'`'-')+ "/target/"+ module.getName()+ ".jar");" is 175.,15
+BungeeCord1,net.md_5.bungee.module,JenkinsModuleSource,retrieve,Magic Number,The method contains a magic number: 15000,15
+BungeeCord1,net.md_5.bungee.module,JenkinsModuleSource,retrieve,Magic Number,The method contains a magic number: 15000,15
+BungeeCord1,net.md_5.bungee.module,ModuleManager,load,Complex Method,Cyclomatic complexity of the method is 11,35
+BungeeCord1,net.md_5.bungee.module,ModuleManager,load,Magic Number,The method contains a magic number: 2,35
+BungeeCord1,net.md_5.bungee.netty,ChannelWrapper,delayedClose,Magic Number,The method contains a magic number: 250,135
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,channelRead,Complex Method,Cyclomatic complexity of the method is 8,80
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,channelRead,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.FINE`"Set remote address via PROXY {0} -> {1}"`new Object[]{channel.getRemoteAddress()`newAddress});" is 148.,80
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Complex Conditional,The conditional expression cause instanceof IOException || (cause instanceof IllegalStateException && handler instanceof InitialHandler) is complex.,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Complex Method,Cyclomatic complexity of the method is 11,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"{0} - corrupted frame: {1}"`new Object[]{handler`cause.getMessage()});" is 127.,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"{0} - bad packet` are mods in use!? {1}"`new Object[]{handler`cause.getCause().getMessage()});" is 151.,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"{0} - overflow in packet detected! {1}"`new Object[]{handler`cause.getCause().getMessage()});" is 150.,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Long Statement,The length of the statement "else if (cause instanceof IOException || (cause instanceof IllegalStateException && handler instanceof InitialHandler)) {" is 121.,145
+BungeeCord1,net.md_5.bungee.netty,HandlerBoss,exceptionCaught,Long Statement,The length of the statement "ProxyServer.getInstance().getLogger().log(Level.WARNING`"{0} - {1}: {2}"`new Object[]{handler`cause.getClass().getSimpleName()`cause.getMessage()});" is 148.,145
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,initChannel,Long Statement,The length of the statement "if (BungeeCord.getInstance().getConnectionThrottle() != null && BungeeCord.getInstance().getConnectionThrottle().throttle(remoteAddress)) {" is 139.,61
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,initChannel,Long Statement,The length of the statement "if (BungeeCord.getInstance().getPluginManager().callEvent(new ClientConnectEvent(remoteAddress`listener)).isCancelled()) {" is 122.,61
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,initChannel,Long Statement,The length of the statement "ch.pipeline().addAfter(FRAME_DECODER`PACKET_DECODER`new MinecraftDecoder(Protocol.HANDSHAKE`true`ProxyServer.getInstance().getProtocolVersion()));" is 146.,61
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,initChannel,Long Statement,The length of the statement "ch.pipeline().addAfter(FRAME_PREPENDER`PACKET_ENCODER`new MinecraftEncoder(Protocol.HANDSHAKE`true`ProxyServer.getInstance().getProtocolVersion()));" is 148.,61
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,newEventLoopGroup,Long Statement,The length of the statement "return io_uring ? new IOUringEventLoopGroup(threads`factory) : epoll ? new EpollEventLoopGroup(threads`factory) : new NioEventLoopGroup(threads`factory);" is 153.,143
+BungeeCord1,net.md_5.bungee.netty,PipelineUtils,getServerChannel,Long Statement,The length of the statement "return io_uring ? IOUringServerSocketChannel.class : epoll ? EpollServerSocketChannel.class : NioServerSocketChannel.class;" is 123.,148
+BungeeCord1,net.md_5.bungee.scheduler,BungeeScheduler,schedule,Long Parameter List,The method has 5 parameters. ,91
+BungeeCord1,net.md_5.bungee.scheduler,BungeeTask,BungeeTask,Long Parameter List,The method has 7 parameters. ,24
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testRun,Magic Number,The method contains a magic number: 5,15
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testCancel,Magic Number,The method contains a magic number: 250,37
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testCancel,Magic Number,The method contains a magic number: 250,37
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testCancel,Magic Number,The method contains a magic number: 250,37
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testScheduleAndRepeat,Magic Number,The method contains a magic number: 250,59
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,testScheduleAndRepeat,Magic Number,The method contains a magic number: 250,59
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,setup,Magic Number,The method contains a magic number: 100,74
+BungeeCord1,net.md_5.bungee.scheduler,SchedulerTest,setup,Magic Number,The method contains a magic number: 100,74
+BungeeCord1,net.md_5.bungee.tab,TabList,handleWriteProperties,Long Statement,The length of the statement "props[i]=new Property(loginResult.getProperties()[i].getName()`loginResult.getProperties()[i].getValue()`loginResult.getProperties()[i].getSignature());" is 152.,89
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Complex Method,Cyclomatic complexity of the method is 9,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 0xFE,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 0xFD,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 0x09,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 0x09,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 4,63
+BungeeCord1,net.md_5.bungee.query,QueryHandler,handleMessage,Magic Number,The method contains a magic number: 0x80,63
+BungeeCord1,net.md_5.bungee.query,RemoteQuery,start,Long Statement,The length of the statement "new Bootstrap().channel(channel).group(eventLoop).handler(new QueryHandler(bungee`listener)).localAddress(address).bind().addListener(future);" is 142.,19
+BungeeCord1,org.slf4j.impl,JDK14LoggerAdapter,log,Long Parameter List,The method has 6 parameters. ,630
+BungeeCord1,org.slf4j.impl,JDK14LoggerAdapter,slf4jLevelIntToJULLevel,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6a57e13e,642
